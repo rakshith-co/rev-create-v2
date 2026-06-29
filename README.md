@@ -1,147 +1,94 @@
-# revCreate
+# RevCreate V2 — Creative Engine for Launchpad
 
-AI-powered ad creative generator for real estate and product advertising. Tell us about the project, upload product images and an optional reference ad, and revCreate generates performance-optimized Meta/Instagram ad creatives — headline, body copy, CTA, and 4 image variations.
-
-> **RevCreate V2 (Launchpad creative engine):** see [`docs/`](docs/README.md) for the product plan,
-> the two approaches (primary + fallback), and the build checklist. The sections below are the V1 setup guide.
-
-## Features
-
-- Provide the project name and mention all its details in the description
-- Upload product images and optional reference ad images (used as structural/style template)
-- AI-generated copy: headline, body copy with pipe-separated details (config | price | location), and CTA
-- 4 image variation outputs per project using Gemini image generation
-- In-app image editing via natural language instructions
-- Project management with status tracking and ZIP download
-- Pipeline audit logs with eval support
-
-## Tech Stack
-
-| Layer            | Technology                                 |
-| ---------------- | ------------------------------------------ |
-| Frontend         | React 18 + TypeScript + Vite + TailwindCSS |
-| Backend          | FastAPI (Python 3.12) + Uvicorn            |
-| Database         | MongoDB (via Motor async driver)           |
-| Copy generation  | Gemini 2.0 Flash (multimodal)              |
-| Image generation | Gemini 3.1 Flash Image Preview (`gemini-3.1-flash-image-preview`) |
-| Deployment       | Docker (nginx frontend + uvicorn backend)  |
-
-## Project Structure
+The execution engine behind **Launchpad**. Give it a campaign brief and it returns
+**Meta-ready ad creatives** — images and ad copy. Launchpad calls it as a service; other surfaces
+can too.
 
 ```
-revCreate/
-├── backend/
-│   ├── main.py               # FastAPI app entry point
-│   ├── db.py                 # MongoDB connection
-│   ├── schemas.py            # Pydantic models
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   ├── routers/
-│   │   ├── projects.py       # Project CRUD + ZIP download
-│   │   ├── images.py         # Image retrieval + editing
-│   │   └── logs.py           # Pipeline audit logs
-│   └── services/
-│       ├── pipeline.py       # Main generation workflow
-│       ├── llm.py            # Copy generation (Gemini)
-│       ├── image_model.py    # Image generation + editing (Gemini)
-│       └── prompt_builder.py # Prompt construction
-└── frontend/
-    ├── src/
-    │   ├── App.tsx            # Root component + state
-    │   ├── api.ts             # API client (Axios)
-    │   ├── types.ts           # TypeScript interfaces
-    │   └── components/        # UI components
-    ├── Dockerfile
-    ├── nginx.conf             # SPA routing + /api proxy
-    └── vite.config.ts
+Campaign brief  →  RevCreate V2 engine  →  ad creatives  →  Meta
 ```
 
-## Local Development
+---
 
-### Prerequisites
+## What we're building
 
-- Python 3.12+
-- Node.js 20+
-- MongoDB (local or Atlas)
-- Google Gemini API key
+Our own version of what Higgsfield's Marketing Studio does — and we own it end to end. Three parts:
 
-### Backend
+1. **Product container** — up to 5 reference images per project (logo, hero, interior, angles).
+2. **Meta ad-template library** — proven Meta ad formats (before/after, price-drop, etc.). These
+   are our "skills," added one at a time. They're what make a static *perform* as an ad, not just
+   look good.
+3. **`gpt-image-2`** — the image model that takes those references and produces genuinely
+   different angles. (The existing RevCreate code already generates with it.)
 
+> **Static creative vs static ad:** a creative looks good (awareness). An ad performs on Meta.
+> We build **ads**.
+
+---
+
+## Two approaches (one chosen, one kept as backup)
+
+| | **A — Build our own** *(primary)* | **B — Higgsfield** *(fallback)* |
+|---|---|---|
+| Idea | Product container + Meta templates on `gpt-image-2` | Wrap Higgsfield Marketing Studio behind a small service |
+| Why | Full control, organised, no external dependency in the main path | Reuses Higgsfield's mature rendering |
+| Trade-off | We build the template library | A wrapper on a wrapper; depends on Higgsfield |
+| Status | **In progress** | Standby — only if A underdelivers |
+
+Full detail in [`docs/`](docs/README.md): [Approach A](docs/approach-a-build-our-own.md) ·
+[Approach B](docs/approach-b-higgsfield.md) · [Build plan](docs/build-plan.md).
+
+---
+
+## Status — 2026-06-25
+
+- Architecture decided: **extend this codebase** (it already has the job API, MongoDB, S3, and
+  `gpt-image-2`).
+- Building **Approach A**. **Approach B** kept as a documented fallback.
+
+---
+
+## How it's built
+
+| Layer | Tech |
+|---|---|
+| Backend | FastAPI (Python 3.12) + Uvicorn |
+| Database | MongoDB |
+| Storage | S3 (presigned URLs) |
+| Image generation | `gpt-image-2` |
+| Frontend | React + TypeScript + Vite + Tailwind |
+| Deploy | Docker |
+
+The engine is a **service with a bounded pipeline** — fixed steps, an LLM only at specific
+decision points. It is *not* an open-ended agent.
+
+---
+
+## Run it locally
+
+**Backend**
 ```bash
 cd backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-```
-
-Create `backend/.env`:
-
-```env
-GEMINI_API_KEY=your_key_here
-MONGO_URI=mongodb://localhost:27017
-DB_NAME=revCreate
-```
-
-```bash
+# create backend/.env with: MONGO_URI, DB_NAME, S3 + model keys
 uvicorn main:app --reload --port 8000
 ```
 
-### Frontend
-
+**Frontend**
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-The dev server runs on `http://localhost:5173` and proxies `/api` requests to `http://localhost:8000`.
+> Secrets live in `.env` files (gitignored) — never commit keys.
 
-## Docker Deployment
+---
 
-Build and run both containers on a shared network:
+## Documentation
 
-```bash
-docker network create revcreate-net
-
-docker build -t revcreate-backend ./backend
-docker run -d --name backend --network revcreate-net \
-  --env-file backend/.env \
-  revcreate-backend
-
-docker build -t revcreate-frontend ./frontend
-docker run -d --name frontend --network revcreate-net \
-  -p 80:80 \
-  revcreate-frontend
-```
-
-The frontend nginx proxies all `/api` requests to the backend container on the internal network.
-
-## Environment Variables
-
-| Variable         | Where          | Description                                               |
-| ---------------- | -------------- | --------------------------------------------------------- |
-| `GEMINI_API_KEY` | backend        | Google Gemini API key                                     |
-| `MONGO_URI`      | backend        | MongoDB connection string                                 |
-| `DB_NAME`        | backend        | Database name (default: `revCreate`)                      |
-| `VITE_API_URL`   | frontend build | API base URL injected at build time (empty = same origin) |
-
-## Model Notes
-
-### Image Generation: `gemini-3.1-flash-image-preview` vs `gemini-3-pro-image-preview`
-
-When generating ad statics with reference ads and product images as inputs, `gemini-3.1-flash-image-preview` produces better results than `gemini-3-pro-image-preview`. The flash model more accurately follows the dual-image taxonomy (Type A product images as visual source, Type B reference ads as layout-only wireframe) and generates cleaner ad compositions with correct branding when both input types are provided.
-
-## Marketplace Deployment
-
-This project follows the [marketplace.revspot.ai](https://marketplace.revspot.ai) deployment spec:
-
-- API calls use `import.meta.env.VITE_API_URL` (injected at build time)
-- Vite base path is hardcoded to `/`
-- Frontend nginx proxies `/api` to the backend container on the internal Docker network
-- No hardcoded domains or slugs in application code
-
-To package for upload:
-
-```bash
-zip -r rev_create.zip . -x "**/node_modules/*" -x ".git/*" -x "**/__pycache__/*" -x "**/venv/*" -x "assets/*" -x "outputs/*" -x ".vscode/*"
-```
+- [Product plan & approaches](docs/README.md)
+- [Approach A — Build our own](docs/approach-a-build-our-own.md) *(primary)*
+- [Approach B — Higgsfield](docs/approach-b-higgsfield.md) *(fallback)*
+- [Build plan & checklist](docs/build-plan.md)
