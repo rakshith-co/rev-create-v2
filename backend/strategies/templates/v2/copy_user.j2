@@ -1,0 +1,39 @@
+Product: {{ product_name }}
+{{ description }}
+{% if has_product_images %}
+Product images attached — use the product as the hero visual.
+{% endif %}
+{% if has_logo_images %}
+Brand logo image attached (Type C) — use it as the official logo in the ad.
+{% endif %}
+{% if brand_company or brand_voice or brand_industry or brand_personas %}
+
+Brand context:
+{% if brand_company %}  Company: {{ brand_company }}{% endif %}
+{% if brand_tagline %}  Tagline: {{ brand_tagline }}{% endif %}
+{% if brand_voice %}  Brand voice: {{ brand_voice }}{% endif %}
+{% if brand_industry %}  Industry: {{ brand_industry }}{% endif %}
+{% if brand_personas %}  Target personas: {{ brand_personas | join('; ') }}{% endif %}
+{% endif %}
+
+Ad format: {{ ad_format }} ({{ aspect }})
+{% if persona_info %}
+Target persona: {{ persona_info }}
+{% endif %}
+{% if creative_strategy %}
+Creative strategy: {{ creative_strategy }}
+{% endif %}
+{% if instructions %}
+Additional User instructions: {{ instructions }}
+{% endif %}
+{% if meta_ad_copy %}
+
+=== APPROVED META AD COPY ===
+Use these Meta variations as the source material for the image copy.
+{% for i in range(4) %}
+
+Variation {{ i + 1 }}:
+  Meta Headline: {{ meta_ad_copy.headline[i] if i < meta_ad_copy.headline|length else '' }}
+  Meta Primary Text: {{ meta_ad_copy.primary_text[i] if i < meta_ad_copy.primary_text|length else '' }}
+{% endfor %}
+{% endif %}

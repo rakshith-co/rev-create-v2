@@ -1,0 +1,26 @@
+Approved copy:
+  Headline: "{{ headline }}"
+  Body copy: "{{ body_copy }}"
+  CTA: "{{ cta }}"
+{% if has_product_images %}
+Product images attached (Type A) — derive all visuals from these.
+{% endif %}
+{% if has_logo_images %}
+Brand logo attached (Type C) — place it exactly as shown.
+{% endif %}
+{% if brand_company or brand_voice or brand_industry %}
+
+Brand context:
+{% if brand_company %}  Company: {{ brand_company }}{% endif %}
+
+{% if brand_voice %}  Brand voice: {{ brand_voice }}{% endif %}
+
+{% if brand_industry %}  Industry: {{ brand_industry }}{% endif %}
+{% endif %}
+
+Ad format: {{ ad_format }} ({{ aspect }})
+{% if has_ref_images %}
+Note: The image generation model receives the reference ad image directly and will replicate its layout and visual structure. Focus your prompt on the background/hero visual, the approved copy verbatim, and the logo only.
+{% endif %}
+
+Write the image_prompt.

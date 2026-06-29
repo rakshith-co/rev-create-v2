@@ -1,0 +1,174 @@
+name: ci
+
+# rev-create ships ONE Docker image (the FastAPI backend in ./backend).
+# Same workflow shape as revspot-backend — single build, single push,
+# single CD dispatch.
+
+env:
+  APP_NAME: rev-create
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+
+permissions:
+  contents: read  # actions/checkout only (no id-token — using AWS access keys)
+
+jobs:
+  build:
+    name: Build Image
+    runs-on: ubuntu-latest
+    outputs:
+      VERSION: ${{ steps.output.outputs.VERSION }}
+      BUILD_IMAGE_WITH_TAG: ${{ steps.output.outputs.BUILD_IMAGE_WITH_TAG }}
+    steps:
+      - uses: actions/checkout@v4
+      # QEMU dropped — only building linux/amd64 (the runner's native arch),
+      # so cross-platform emulation isn't needed. Add `docker/setup-qemu-action`
+      # back if arm64 ever returns to the platforms list below.
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          # IAM user access keys stored as GitHub secrets. Same revspot-ci-build
+          # user as revspot-backend / qualif-ai (needs ECR push on rev-create-*).
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      # ECR repo + tag naming per branch:
+      #   staging → rev-create-staging : <sha>,  + floating tag :staging
+      #   main  → rev-create-prod    : <sha>,  + floating tag :production
+      # The env-suffixed repo name matches what revspot-apps generates in
+      # manifests/<env>/rev-create/*.yaml — without this suffix, Argo
+      # syncs an image URI that doesn't exist in ECR (ImagePullBackOff).
+      - name: Derive image names from branch
+        id: image
+        run: |
+          set -euo pipefail
+          REGISTRY="${{ steps.login-ecr.outputs.registry }}"
+          APP='${{ env.APP_NAME }}'
+          SHA=$(git rev-parse --short '${{ github.sha }}')
+
+          case "${{ github.ref }}" in
+            refs/heads/staging) REPO="${APP}-staging"; FLOATING="staging" ;;
+            refs/heads/main)  REPO="${APP}-prod";    FLOATING="production" ;;
+            *) echo "✗ unexpected ref: ${{ github.ref }}" >&2; exit 1 ;;
+          esac
+
+          SHA_TAG="${REGISTRY}/${REPO}:${SHA}"
+          {
+            echo "VERSION=${SHA}"
+            echo "REPO=${REPO}"
+            echo "SHA_TAG=${SHA_TAG}"
+          } >> "$GITHUB_OUTPUT"
+
+          {
+            echo 'TAGS<<EOF'
+            echo "${SHA_TAG}"
+            echo "${REGISTRY}/${REPO}:${FLOATING}"
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create AWS ECR repository
+        uses: uspacy/aws-ecr-action@v1
+        with:
+          repositoryName: ${{ steps.image.outputs.REPO }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          # Build context is ./backend (where the Dockerfile + source live).
+          # docker-compose.yml mirrors this: `build: ./backend`.
+          context: ./backend
+          file: ./backend/Dockerfile
+          # amd64 only — Karpenter is configured for amd64 nodes only
+          # (see infrastructure/revspot-platform/src/eks/karpenter.ts).
+          platforms: linux/amd64
+          push: true
+          tags: ${{ steps.image.outputs.TAGS }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          provenance: false
+          sbom: false
+
+      - name: Generate output
+        id: output
+        run: |
+          echo "VERSION=${{ steps.image.outputs.VERSION }}"          >> $GITHUB_OUTPUT
+          echo "BUILD_IMAGE_WITH_TAG=${{ steps.image.outputs.SHA_TAG }}" >> $GITHUB_OUTPUT
+
+  summary:
+    name: Artifacts
+    runs-on: ubuntu-latest
+    needs: [build]
+    env:
+      VERSION: ${{ needs.build.outputs.VERSION }}
+      IMAGEURL: ${{ needs.build.outputs.BUILD_IMAGE_WITH_TAG }}
+    steps:
+      - if:  ${{ always() && contains(needs.*.result, 'failure') }}
+        run: |
+          echo 'Build failed. ' >> $GITHUB_STEP_SUMMARY
+      - if:  ${{ always() && (needs.build.result == 'success') }}
+        run: |
+          echo '## :rocket: Build Success. :rocket:' >> $GITHUB_STEP_SUMMARY
+          echo "App name: ${{ env.APP_NAME }}" >> $GITHUB_STEP_SUMMARY
+          echo "Version: $VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "ImageURI: $IMAGEURL" >> $GITHUB_STEP_SUMMARY
+
+  # ── Continuous deploy trigger ─────────────────────────────────────────
+  # After the image is pushed to ECR, dispatch the CD workflow in the
+  # infrastructure repo. It will flip revCreateImageTag in
+  # revspot-apps/Pulumi.<env>.yaml + regenerate
+  # manifests/<env>/rev-create/*.yaml, commit, and push; Argo CD syncs
+  # the new image to the cluster.
+  trigger-cd:
+    name: Trigger infrastructure CD
+    needs: build
+    if: github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine env from branch
+        id: env
+        run: |
+          case "${{ github.ref }}" in
+            refs/heads/staging) echo 'env=staging' >> "$GITHUB_OUTPUT" ;;
+            refs/heads/main)  echo 'env=prod'    >> "$GITHUB_OUTPUT" ;;
+          esac
+      - name: Dispatch cd-bump-image.yaml in revspot/infrastructure
+        env:
+          # Same secret name + PAT as revspot-backend / qualif-ai use —
+          # fine-grained PAT with `actions:write` on revspot/infrastructure.
+          GH_TOKEN: ${{ secrets.INFRA_DISPATCH_TOKEN }}
+        run: |
+          gh workflow run cd-bump-image.yaml \
+            --repo revspot/infrastructure \
+            --ref main \
+            -f apps=rev-create \
+            -f tag='${{ needs.build.outputs.VERSION }}' \
+            -f env='${{ steps.env.outputs.env }}'
+      - name: Summary
+        if: always()
+        env:
+          VERSION: ${{ needs.build.outputs.VERSION }}
+          DEPLOY_ENV: ${{ steps.env.outputs.env }}
+        run: |
+          {
+            echo '## :ship: CD dispatched'
+            echo ''
+            echo "| Field | Value |"
+            echo "|---|---|"
+            echo "| App        | \`rev-create\` |"
+            echo "| Target env | \`$DEPLOY_ENV\` |"
+            echo "| Image tag  | \`$VERSION\` |"
+            echo ''
+            echo "Track at: https://github.com/revspot/infrastructure/actions"
+          } >> "$GITHUB_STEP_SUMMARY"

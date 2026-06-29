@@ -1,0 +1,30 @@
+Product: {{ product_name }}
+{{ description }}
+{% if has_product_images %}
+Product images attached — use the product as the hero visual (full-bleed background).
+{% endif %}
+{% if has_logo_images %}
+Brand logo image attached — reproduce it exactly in the top-left corner.
+{% endif %}
+{% if brand_company or brand_tagline or brand_voice or brand_industry %}
+
+Brand context:
+{% if brand_company %}  Company: {{ brand_company }}
+{% endif %}
+{% if brand_tagline %}  Tagline: {{ brand_tagline }}
+{% endif %}
+{% if brand_voice %}  Brand voice: {{ brand_voice }}
+{% endif %}
+{% if brand_industry %}  Industry: {{ brand_industry }}
+{% endif %}
+{% endif %}
+
+Banner format: 1200×628px Facebook Lead Ad form banner (1.91:1 landscape).
+
+Write an image_prompt for this banner. Full-bleed hero visual only — no text, logos, CTAs, or graphic elements.
+{% if persona_info %}
+The scene must speak directly to this persona's desire: {{ persona_info }}. Choose a visual that makes them feel the benefit — a lifestyle moment, an emotional scene, or an aspirational setting. The building itself is secondary unless it is the most powerful expression.
+{% else %}
+Describe a scene that evokes the aspiration behind the product — lifestyle, emotion, or setting that makes the viewer feel the benefit.
+{% endif %}
+Describe composition, mood, lighting, and subject only.
