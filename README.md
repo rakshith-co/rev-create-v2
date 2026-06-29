@@ -2,6 +2,9 @@
 
 AI-powered ad creative generator for real estate and product advertising. Tell us about the project, upload product images and an optional reference ad, and revCreate generates performance-optimized Meta/Instagram ad creatives — headline, body copy, CTA, and 4 image variations.
 
+> **RevCreate V2 (Launchpad creative engine):** see [`docs/`](docs/README.md) for the product plan,
+> the two approaches (primary + fallback), and the build checklist. The sections below are the V1 setup guide.
+
 ## Features
 
 - Provide the project name and mention all its details in the description
