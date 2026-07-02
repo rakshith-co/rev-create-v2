@@ -7,8 +7,11 @@ Plan for **Approach A** (primary). Each item is a small, shippable deliverable.
 **Phase 1 — Foundations**
 - [ ] Product container: `products` collection + a step that gathers up to 5 tagged reference
       images (upload, or Firecrawl from the URL). *Done = a project produces a product with refs.*
-- [ ] Template library: `templates` collection + 3 starter templates (before/after, price-drop,
-      location-advantage). *Done = 3 real Meta ad templates exist.*
+- [ ] Format library: `formats` collection, seeded from what we already hold — the 3 recipes
+      leaked verbatim from Higgsfield job payloads, then vision-decode the 40 saved preview
+      images (`~/Downloads/higgsfield-templates/`; contact sheet in `docs/reference/`) into
+      worded blueprints and keep the real-estate-relevant ones. *Done = first 3–10 format
+      records exist.* (See [architecture.md](architecture.md) for the record schema.)
 
 **Phase 2 — Generation**
 - [ ] Atelier path: call `gpt-image-2` with the product refs + a template recipe. *Done = product +

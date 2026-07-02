@@ -21,6 +21,8 @@ We are building **Approach A**. **Approach B** is fully documented and kept as a
 ## Documents
 
 - [Approach A — Build our own](approach-a-build-our-own.md) *(primary)*
+- [Engine architecture](architecture.md) — how it works internally, based on a full decode of
+  Higgsfield's Marketing Studio mechanism
 - [Approach B — Higgsfield](approach-b-higgsfield.md) *(fallback)*
 - [Build plan & checklist](build-plan.md)
 
