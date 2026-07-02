@@ -7,19 +7,20 @@ Plan for **Approach A** (primary). Each item is a small, shippable deliverable.
 **Phase 1 — Foundations**
 - [ ] Product container: `products` collection + a step that gathers up to 5 tagged reference
       images (upload, or Firecrawl from the URL). *Done = a project produces a product with refs.*
-- [ ] Format library: `formats` collection, seeded from what we already hold — the 3 recipes
-      leaked verbatim from Higgsfield job payloads, then vision-decode the 40 saved preview
-      images (`~/Downloads/higgsfield-templates/`; contact sheet in `docs/reference/`) into
-      worded blueprints and keep the real-estate-relevant ones. *Done = first 3–10 format
-      records exist.* (See [architecture.md](architecture.md) for the record schema.)
+- [x] Format library: **done** — all 40 Marketing Studio previews decoded into worded
+      blueprints + 6 RE-native drafts, one `.md` file per format in `backend/formats/`
+      (compiled by `build.py`; 3 recipes anchored on leaked verbatim ground truth).
 
 **Phase 2 — Generation**
-- [ ] Atelier path: call `gpt-image-2` with the product refs + a template recipe. *Done = product +
-      template → an on-brand static ad.*
-- [ ] Template selector: pick the best template for a brief. *Done = brief → template chosen
-      automatically.*
-- [ ] Copy: personas + hook + USP + CTA (port from the existing persona work). *Done = brief →
-      personas + ad copy.*
+- [x] Atelier strategy wired: `prompt_strategy=atelier` on the existing generate API
+      (`backend/strategies/atelier.py` + format loader + registration). 14 unit tests pass;
+      `python -m scripts.atelier_dry_run` prints every assembled prompt with no keys needed.
+- [x] Format selector: done — rides the image-prompt LLM call (menu of 32 RE-relevant
+      formats, `[format: id]` marker for observability).
+- [x] Copy prompts: done — emotion-first headline + friend-voice pipe-separated facts,
+      same strict AdCopy/meta JSON contracts the pipeline already parses.
+- [ ] **First live generation** — blocked ONLY on `backend/.env` (`OPENAI_API_KEY` for
+      gpt-image-2, `GEMINI_API_KEY` for copy/selector, `MONGO_URI`). Everything upstream is ready.
 
 **Phase 3 — Quality & delivery**
 - [ ] Input check + quality check: handle thin briefs; reject creatives that wouldn't perform,

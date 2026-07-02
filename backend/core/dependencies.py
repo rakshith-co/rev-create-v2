@@ -8,6 +8,7 @@ from llm.registry import DEFAULT_REGISTRY
 
 from strategies.v2 import V2Strategy
 from strategies.fb import FBStrategy
+from strategies.atelier import AtelierStrategy
 from search.web import WebImageSearch
 from search.noop import NoOpSearch
 from postprocessors.compositor import RERACompositor
@@ -37,6 +38,7 @@ def get_strategies() -> dict:
         _strategies = {
             "v2": V2Strategy(),
             "fb": FBStrategy(),
+            "atelier": AtelierStrategy(),
         }
     return _strategies
 
