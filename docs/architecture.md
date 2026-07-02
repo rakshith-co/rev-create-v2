@@ -75,15 +75,32 @@ sentences — if fat spec files made better ads, theirs would be fat):
 | Pixel-exact elements: logo, RERA fine print, (optionally) CTA / price pill | **Compositing in code (step ⑤)** | The model can never be trusted with these; composite the real pixels |
 | Fonts, hex-precise type | **Not in prompts** | Text-to-image ignores px/font-name precision; if type fidelity becomes critical for a format, flip that format to scene-only generation + code-composited text (per-format flag, future) |
 
-Product record gains a brand kit:
+### How color is actually decided (the precedence chain)
+
+Observed from Marketing Studio: coloring is **automatic** — most users provide no brand kit and
+mediocre product images, and outputs still look coherent. The mechanism, in precedence order:
+
+1. **Recipe → tonal structure.** Blueprints hardcode the skeleton ("dark bg", "warm solid canvas",
+   "white panel"), never the hue.
+2. **Conditioning image → anchor hues.** No palette-extraction code exists; the image model itself
+   reads dominant colors off the product refs and harmonizes around them.
+3. **The model's aesthetic prior → everything else.** Trained on millions of professional ads,
+   it defaults to good color harmony when inputs give no signal. This is what makes bad inputs
+   still produce decent ads.
+
+**Our default path is the same: no brand kit required — let the model auto-harmonize.**
+The brand kit is an *optional override* for clients with strict guidelines:
 
 ```jsonc
-"brand_kit": {
+"brand_kit": {                   // OPTIONAL — absent = auto-harmonize (the MS default)
   "palette": [{ "name": "deep forest green", "hex": "#1D3B2A", "role": "primary" }],
-  "logo_url": "...",            // the composited one — never generated
+  "logo_url": "...",             // the composited one — never generated
   "type_vibe": "elegant serif, editorial"
 }
 ```
+
+Where brand color must be *exact* (developer's logo red, a CTA chip), prompt steering is hope —
+**compositing is enforcement** (step ⑤).
 
 > Calibration test (first thing after the OpenAI key lands): same format, minimal blueprint vs
 > hex/font-stuffed prompt — measure what the model actually obeys instead of arguing about it.
