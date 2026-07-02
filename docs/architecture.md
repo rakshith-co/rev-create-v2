@@ -63,6 +63,31 @@ recipes (numbered snake_case prompt artifacts like `37_hero_promo_burst`).
 }
 ```
 
+## What lives where — format vs brand vs compositing
+
+A deliberate split. Formats stay minimal **on purpose** (Higgsfield's own recipes are 2–4
+sentences — if fat spec files made better ads, theirs would be fat):
+
+| Concern | Lives in | Why |
+|---|---|---|
+| Layout grammar: zones, % splits, type *weight/hierarchy* ("massive condensed uppercase", "type = ⅓ of canvas") | **Format file** | This is the language the image model actually obeys |
+| Exact colors, palette, logo, type vibe | **Brand kit on the product record** | Brand-specific, injected at prompt assembly — a format hardcoding a color breaks on the next builder |
+| Pixel-exact elements: logo, RERA fine print, (optionally) CTA / price pill | **Compositing in code (step ⑤)** | The model can never be trusted with these; composite the real pixels |
+| Fonts, hex-precise type | **Not in prompts** | Text-to-image ignores px/font-name precision; if type fidelity becomes critical for a format, flip that format to scene-only generation + code-composited text (per-format flag, future) |
+
+Product record gains a brand kit:
+
+```jsonc
+"brand_kit": {
+  "palette": [{ "name": "deep forest green", "hex": "#1D3B2A", "role": "primary" }],
+  "logo_url": "...",            // the composited one — never generated
+  "type_vibe": "elegant serif, editorial"
+}
+```
+
+> Calibration test (first thing after the OpenAI key lands): same format, minimal blueprint vs
+> hex/font-stuffed prompt — measure what the model actually obeys instead of arguing about it.
+
 ## Seeding the format library
 
 We already hold the raw material:
