@@ -1,0 +1,92 @@
+{
+  "source": "Decoded from Higgsfield Marketing Studio previews (2026-06-25); 3 blueprints anchored on recipes leaked verbatim in job payloads",
+  "duplicates": [
+    {
+      "keep": "stat_surround_v1",
+      "drop": [
+        "stat_surround_2_v1"
+      ],
+      "why": "Same skeleton: single hero centered with four stat/benefit callouts stacked in two side rails plus a proof footer. stat_surround_v1's number-led blocks (oversized figure + micro caption) are the stronger stat device for RE facts, and its negatives already strip the D2C props; v2 only adds a rotating badge and chip icons on top of the same grid."
+    },
+    {
+      "keep": "star_review_v1",
+      "drop": [
+        "trusted_review_v1",
+        "highlighted_comment_v1"
+      ],
+      "why": "All three are the identical grammar: oversized pull-quote headline + a single white rounded review-card UI (avatar, verified tag, stars, body, helpful-count footer) floating over a hero on one deep brand-color field. star_review_v1 is the cleanest single-card version; trusted_review only recolors it, and highlighted_comment adds mini quote chips that push it toward card clutter."
+    },
+    {
+      "keep": "social_proof_v1",
+      "drop": [
+        "social_comment_v1"
+      ],
+      "why": "Byte-for-byte the same layout: white canvas, bold lowercase headline top, one grey iOS-native comment card middle, hero imagery row bleeding off the bottom. social_proof_v1's three-frame bottom row maps perfectly to the RE exterior/interior/amenity trio, so it's the more adaptable keeper."
+    },
+    {
+      "keep": "benefits_checklist_v1",
+      "drop": [
+        "why_were_different_v1",
+        "color_block_v1",
+        "comparison_table_v1"
+      ],
+      "why": "Four skins of the same brand-vs-generic comparison mechanic (mirrored checklists, US/THEM table, two-column spec rows). benefits_checklist_v1's filled-dot vs empty-circle table on a single deep field is the only version that stays confident rather than combative — no grey competitor photo, no X marks — which is the only register that survives at ₹1Cr+. Also fold then_vs_now_v1's job into this keeper; its balance-scale prop is a distinct visual but the same comparison job done more gimmicky."
+    },
+    {
+      "keep": "headline_v1",
+      "drop": [
+        "product_spotlight_v1"
+      ],
+      "why": "Both are flat single-color field, oversized stacked display headline owning the top ~40%, centered hero cutout below with small supporting copy. headline_v1 is the purer grammar (no podium planes, CTA pill or benefit-chip row to strip out) and its script-intro + emotional headline maps directly to the emotion-headline / friend-fact-subline house rule."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "price_pill_launch_v1",
+      "name": "Price-Pill Launch",
+      "blueprint": "Full-bleed twilight facade or aerial hero, graded to one deep tone; project lockup top-left, one emotional headline mid-left ('The corner of the city that stays quiet.'). Below it, a single quiet rounded pill carries the only number on the canvas — '3 BHK from ₹1.62Cr*' — with an optional second micro-pill for possession year. A compliant dark footer strip runs full-width at the base in micro type: RERA registration number, project/promoter name, disclaimer and site URL — the strip is a fixed system component so every export ships compliant by default. No starbursts, no strike-throughs, one seal maximum."
+    },
+    {
+      "id": "connectivity_minutes_map_v1",
+      "name": "Location Minutes Map",
+      "blueprint": "Minimal editorial map: flat deep-tone field with an abstracted road/metro line drawing, project pin glowing at center, 4–5 hairline routes radiating to landmark chips each stating a drive-time fact ('Airport · 22 min', 'ORR · 8 min'), no cartographic clutter. A small hero-render card sits inset in one corner tying pin to product, headline above sells the location emotionally ('Live where the city can reach you — not the reverse.'). RERA microline at the base; every minute figure must be a real, defensible number."
+    },
+    {
+      "id": "floorplan_teaser_v1",
+      "name": "Floor-Plan Tease",
+      "blueprint": "A blueprint-toned floor plan fills ~60% of the canvas but is deliberately cropped at one edge; a single zone (the deck, master suite or living span) is tint-highlighted with one hairline callout stating the sqft or dimension fact told casually ('the deck alone is 14 ft deep'). Emotional headline top ('Bigger than your first apartment. Just the balcony.'), CTA line offers the full plan via the lead form — the crop is the lead-gen mechanic. Fine-line draughtsman style only, no cartoon icons, RERA + config microline in the footer."
+    },
+    {
+      "id": "eoi_window_v1",
+      "name": "EOI Window (Premium Urgency)",
+      "blueprint": "Flat deep field, centered serif date lockup as the hero of the frame — 'EOI closes 14 July' — with a thin horizontal allocation bar beneath it stating the scarcity as fact, not fear ('42 of 180 homes allocated'). The tower render sits in the lower third, one restrained circular launch seal, developer lockup and RERA strip at the base. Urgency carried entirely by typography and a true number: no countdown clocks, no red, no starbursts."
+    },
+    {
+      "id": "private_walkthrough_invite_v1",
+      "name": "Private Walk-through Invite",
+      "blueprint": "Designed as a letterpress event invitation: cream or ink field, thin-rule border, centered serif stack — project name, 'You are invited', experience-centre address and weekend date, RSVP-style CTA ('Book your private walk-through'). One small twilight render or lifestyle vignette sits inside the rule as the only image. Reframes the Meta lead form as an appointment, which is the actual conversion event in RE; RERA microline sits outside the border at the base."
+    },
+    {
+      "id": "construction_progress_v1",
+      "name": "Progress Proof",
+      "blueprint": "A 2×2 or split layout pairing dated real site photographs (slab count, tower crane, finished floors — each with a small date stamp) against the final render, under a bold header like 'On schedule. On record.' Footer carries possession date, RERA number and builder-legacy line. This is the trust format RE uniquely needs — de-risking an unfinished product — and no D2C-derived library has it; photos must stay honest and undramatized, no render passed off as site photo."
+    }
+  ],
+  "shortlist": [
+    "magazine_style_v1",
+    "lifestyle_with_numbers_v1",
+    "scroll_break_v1",
+    "press_screenshot_v1",
+    "stat_surround_v1",
+    "key_features_v1",
+    "hero_statement_v1",
+    "customer_quote_v1",
+    "customer_story_v1",
+    "star_review_v1",
+    "media_mentions_v1",
+    "benefits_v1",
+    "personal_note_v1",
+    "behind_the_product_v1"
+  ],
+  "selector_notes": "Route by campaign moment first, tags second: cold-audience/launch moments should pull hook-led and editorial grammars (scroll_break_v1, magazine_style_v1, press_screenshot_v1, hero_statement_v1 — tags: curiosity, launch, scarcity, brand-statement), while consideration and retargeting moments pull proof grammars (star_review_v1, customer_quote_v1, customer_story_v1, media_mentions_v1 — tags: social-proof, trust, testimonial). Rational-buyer or spec-heavy briefs (NRI, end-user upgrader, corridor-comparison) map to stat/spec formats (stat_surround_v1, key_features_v1, benefits_v1, behind_the_product_v1, benefits_checklist_v1), and unknown-builder trust gaps map to personal_note_v1, media_mentions_v1 and the new construction_progress_v1. Within any adset, select one emotion-led, one proof-led and one native/UGC-toned unit — never two formats sharing the same grammar (e.g. two review-card units) — and honor the house copy rule everywhere: headline sells an emotion, subline states the fact like a friend. Scarcity/demand claims (press_screenshot_v1, eoi_window_v1, lifestyle_with_numbers_v1's stat) are only selectable when a real verifiable number exists; unrecognized builders in mystery-mode should avoid press/scarcity name-drops and lean on scroll_break_v1, customer_story_v1 and magazine_style_v1 instead. Every selected format inherits the RERA-compliant footer strip from price_pill_launch_v1 as a system-level component, not a per-format choice."
+}

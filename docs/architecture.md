@@ -45,6 +45,10 @@ Steps ①, ②, ⑥ are single bounded LLM calls. ③ and ⑤ are plain code. No
 
 ## The format record (one per Meta ad format — these are the "skills")
 
+On disk, each format is **one `.md` file** in `backend/formats/` (frontmatter + worded blueprint —
+see the README there), compiled into the record below. This mirrors how Higgsfield stores its own
+recipes (numbered snake_case prompt artifacts like `37_hero_promo_burst`).
+
 ```jsonc
 // collection: formats
 {

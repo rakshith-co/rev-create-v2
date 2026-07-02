@@ -1,6 +1,6 @@
 # Format Library
 
-All 40 Higgsfield Marketing Studio formats, decoded into worded layout blueprints, scored for premium real estate. Machine-readable seed: `backend/seeds/formats.json`.
+All 40 Higgsfield Marketing Studio formats, decoded into worded layout blueprints, scored for premium real estate. Source of truth: one file per format in `backend/formats/` (edit those); `backend/seeds/formats.json` is compiled from them via `backend/formats/build.py`.
 
 ## Start here — the real-estate shortlist (curated order)
 
