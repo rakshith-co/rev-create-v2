@@ -1,0 +1,1211 @@
+{
+  "source": "Decoded from Higgsfield Marketing Studio previews (2026-06-25); 3 blueprints anchored on recipes leaked verbatim in job payloads",
+  "curation": {
+    "duplicates": [
+      {
+        "keep": "stat_surround_v1",
+        "drop": [
+          "stat_surround_2_v1"
+        ],
+        "why": "Same skeleton: single hero centered with four stat/benefit callouts stacked in two side rails plus a proof footer. stat_surround_v1's number-led blocks (oversized figure + micro caption) are the stronger stat device for RE facts, and its negatives already strip the D2C props; v2 only adds a rotating badge and chip icons on top of the same grid."
+      },
+      {
+        "keep": "star_review_v1",
+        "drop": [
+          "trusted_review_v1",
+          "highlighted_comment_v1"
+        ],
+        "why": "All three are the identical grammar: oversized pull-quote headline + a single white rounded review-card UI (avatar, verified tag, stars, body, helpful-count footer) floating over a hero on one deep brand-color field. star_review_v1 is the cleanest single-card version; trusted_review only recolors it, and highlighted_comment adds mini quote chips that push it toward card clutter."
+      },
+      {
+        "keep": "social_proof_v1",
+        "drop": [
+          "social_comment_v1"
+        ],
+        "why": "Byte-for-byte the same layout: white canvas, bold lowercase headline top, one grey iOS-native comment card middle, hero imagery row bleeding off the bottom. social_proof_v1's three-frame bottom row maps perfectly to the RE exterior/interior/amenity trio, so it's the more adaptable keeper."
+      },
+      {
+        "keep": "benefits_checklist_v1",
+        "drop": [
+          "why_were_different_v1",
+          "color_block_v1",
+          "comparison_table_v1"
+        ],
+        "why": "Four skins of the same brand-vs-generic comparison mechanic (mirrored checklists, US/THEM table, two-column spec rows). benefits_checklist_v1's filled-dot vs empty-circle table on a single deep field is the only version that stays confident rather than combative — no grey competitor photo, no X marks — which is the only register that survives at ₹1Cr+. Also fold then_vs_now_v1's job into this keeper; its balance-scale prop is a distinct visual but the same comparison job done more gimmicky."
+      },
+      {
+        "keep": "headline_v1",
+        "drop": [
+          "product_spotlight_v1"
+        ],
+        "why": "Both are flat single-color field, oversized stacked display headline owning the top ~40%, centered hero cutout below with small supporting copy. headline_v1 is the purer grammar (no podium planes, CTA pill or benefit-chip row to strip out) and its script-intro + emotional headline maps directly to the emotion-headline / friend-fact-subline house rule."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "price_pill_launch_v1",
+        "name": "Price-Pill Launch",
+        "blueprint": "Full-bleed twilight facade or aerial hero, graded to one deep tone; project lockup top-left, one emotional headline mid-left ('The corner of the city that stays quiet.'). Below it, a single quiet rounded pill carries the only number on the canvas — '3 BHK from ₹1.62Cr*' — with an optional second micro-pill for possession year. A compliant dark footer strip runs full-width at the base in micro type: RERA registration number, project/promoter name, disclaimer and site URL — the strip is a fixed system component so every export ships compliant by default. No starbursts, no strike-throughs, one seal maximum."
+      },
+      {
+        "id": "connectivity_minutes_map_v1",
+        "name": "Location Minutes Map",
+        "blueprint": "Minimal editorial map: flat deep-tone field with an abstracted road/metro line drawing, project pin glowing at center, 4–5 hairline routes radiating to landmark chips each stating a drive-time fact ('Airport · 22 min', 'ORR · 8 min'), no cartographic clutter. A small hero-render card sits inset in one corner tying pin to product, headline above sells the location emotionally ('Live where the city can reach you — not the reverse.'). RERA microline at the base; every minute figure must be a real, defensible number."
+      },
+      {
+        "id": "floorplan_teaser_v1",
+        "name": "Floor-Plan Tease",
+        "blueprint": "A blueprint-toned floor plan fills ~60% of the canvas but is deliberately cropped at one edge; a single zone (the deck, master suite or living span) is tint-highlighted with one hairline callout stating the sqft or dimension fact told casually ('the deck alone is 14 ft deep'). Emotional headline top ('Bigger than your first apartment. Just the balcony.'), CTA line offers the full plan via the lead form — the crop is the lead-gen mechanic. Fine-line draughtsman style only, no cartoon icons, RERA + config microline in the footer."
+      },
+      {
+        "id": "eoi_window_v1",
+        "name": "EOI Window (Premium Urgency)",
+        "blueprint": "Flat deep field, centered serif date lockup as the hero of the frame — 'EOI closes 14 July' — with a thin horizontal allocation bar beneath it stating the scarcity as fact, not fear ('42 of 180 homes allocated'). The tower render sits in the lower third, one restrained circular launch seal, developer lockup and RERA strip at the base. Urgency carried entirely by typography and a true number: no countdown clocks, no red, no starbursts."
+      },
+      {
+        "id": "private_walkthrough_invite_v1",
+        "name": "Private Walk-through Invite",
+        "blueprint": "Designed as a letterpress event invitation: cream or ink field, thin-rule border, centered serif stack — project name, 'You are invited', experience-centre address and weekend date, RSVP-style CTA ('Book your private walk-through'). One small twilight render or lifestyle vignette sits inside the rule as the only image. Reframes the Meta lead form as an appointment, which is the actual conversion event in RE; RERA microline sits outside the border at the base."
+      },
+      {
+        "id": "construction_progress_v1",
+        "name": "Progress Proof",
+        "blueprint": "A 2×2 or split layout pairing dated real site photographs (slab count, tower crane, finished floors — each with a small date stamp) against the final render, under a bold header like 'On schedule. On record.' Footer carries possession date, RERA number and builder-legacy line. This is the trust format RE uniquely needs — de-risking an unfinished product — and no D2C-derived library has it; photos must stay honest and undramatized, no render passed off as site photo."
+      }
+    ],
+    "shortlist": [
+      "magazine_style_v1",
+      "lifestyle_with_numbers_v1",
+      "scroll_break_v1",
+      "press_screenshot_v1",
+      "stat_surround_v1",
+      "key_features_v1",
+      "hero_statement_v1",
+      "customer_quote_v1",
+      "customer_story_v1",
+      "star_review_v1",
+      "media_mentions_v1",
+      "benefits_v1",
+      "personal_note_v1",
+      "behind_the_product_v1"
+    ],
+    "selector_notes": "Route by campaign moment first, tags second: cold-audience/launch moments should pull hook-led and editorial grammars (scroll_break_v1, magazine_style_v1, press_screenshot_v1, hero_statement_v1 — tags: curiosity, launch, scarcity, brand-statement), while consideration and retargeting moments pull proof grammars (star_review_v1, customer_quote_v1, customer_story_v1, media_mentions_v1 — tags: social-proof, trust, testimonial). Rational-buyer or spec-heavy briefs (NRI, end-user upgrader, corridor-comparison) map to stat/spec formats (stat_surround_v1, key_features_v1, benefits_v1, behind_the_product_v1, benefits_checklist_v1), and unknown-builder trust gaps map to personal_note_v1, media_mentions_v1 and the new construction_progress_v1. Within any adset, select one emotion-led, one proof-led and one native/UGC-toned unit — never two formats sharing the same grammar (e.g. two review-card units) — and honor the house copy rule everywhere: headline sells an emotion, subline states the fact like a friend. Scarcity/demand claims (press_screenshot_v1, eoi_window_v1, lifestyle_with_numbers_v1's stat) are only selectable when a real verifiable number exists; unrecognized builders in mystery-mode should avoid press/scarcity name-drops and lean on scroll_break_v1, customer_story_v1 and magazine_style_v1 instead. Every selected format inherits the RERA-compliant footer strip from price_pill_launch_v1 as a system-level component, not a per-format choice."
+  },
+  "formats": [
+    {
+      "id": "magazine_style_v1",
+      "name": "Magazine Style",
+      "blueprint": "Full-bleed editorial photo fills the entire 1:1 frame — subject occupies the top 60%, shot low-angle against a monochrome color-washed set, with a small brand logomark pinned top-right. The bottom 40% darkens into a deep gradient panel: a tiny boxed uppercase kicker tag sits left-aligned at the 58% line, then a massive two-line condensed uppercase headline stacks beneath it in heavy magazine-cover type — line one in white, line two switching to the single brand accent color. A small @handle credit anchors the bottom-left corner. Everything left-aligned on one margin; type covers roughly a third of the canvas height.",
+      "copy_slots": [
+        "kicker",
+        "headline_line1",
+        "headline_line2_accent",
+        "handle"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price tags, discount badges or CTA buttons; no more than one accent color; no centered type or thin airy fonts — the headline must stay heavy, condensed, left-locked; no busy multi-image collage; keep the background a single moody color wash, never a cluttered lifestyle scene fighting the type.",
+      "use_when": [
+        "launch",
+        "brand-statement",
+        "premium",
+        "editorial",
+        "curiosity"
+      ],
+      "re_relevance": 9,
+      "re_adaptation": "Swap the model-with-product for a dusk facade hero or a resident-on-the-balcony lifestyle shot color-graded to one tone; the two-line headline becomes the emotional claim with the location or possession promise as the accent line (e.g. \"NOT JUST AN ADDRESS.\" / \"A WHITEFIELD LANDMARK.\"), kicker carries the project + configuration tag."
+    },
+    {
+      "id": "lifestyle_with_numbers_v1",
+      "name": "Lifestyle with Numbers",
+      "blueprint": "Top 50-55%: full-bleed lifestyle/hero photo on a warm glowing gradient backdrop, subject centered with soft ground shadow; a thin micro-strip across the very top carries the brand wordmark and tagline in tiny letterspaced uppercase, separated by dot dividers. Bottom 45-50%: dark gradient panel (deep brand tone fading to near-black at the base) that blends up into the photo. On the panel, a big two-line UPPERCASE statistic headline in heavy condensed sans, set in the brand accent color, left-aligned with tight leading — the number leads the line. Under it, one short witty subline in white sentence case with 2-3 keywords tinted in the accent color; generous margins, no other elements.",
+      "copy_slots": [
+        "brand_strip",
+        "tagline",
+        "headline_stat",
+        "subline"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price tags, discount badges or countdown clutter; no more than one statistic on the canvas; no white boxes or borders around the headline; keep the bottom panel a clean gradient — no texture, patterns or icon rows; hero photo stays photographic and uncluttered, never a collage; subline stays one line, never a paragraph.",
+      "use_when": [
+        "stat-led",
+        "social-proof",
+        "lifestyle",
+        "premium",
+        "trust",
+        "launch"
+      ],
+      "re_relevance": 9,
+      "re_adaptation": "Swap the D2C product hero for a golden-hour facade, amenity or resident-lifestyle shot; the statistic becomes a trust or scarcity number (\"87% of Tower A sold in 45 days\", \"212 families moved in\", \"12 mins to the airport\") and the subline delivers it casually, like a friend stating a fact."
+    },
+    {
+      "id": "press_screenshot_v1",
+      "name": "Press Screenshot",
+      "blueprint": "Square press-clipping on textured cream newsprint, framed by a thin single-accent-color border. Top 8%: newspaper masthead row — tiny all-caps publication label left, issue/date label right, hairline rule beneath. Next 30%: massive black all-caps condensed headline, two stacked lines, left-aligned nearly edge-to-edge, stating a scarcity or demand fact. Middle 35%: single product/hero image centered on the bare paper with a soft cast shadow, its dominant color echoing the frame accent. Bottom 27%: torn-edge paper strip carrying a one-sentence serif editorial lede (\"Here's why X is quietly outselling Y this season\") with the brand name and 2-3 key phrases in bold, reading like the first line of a news article.",
+      "copy_slots": [
+        "masthead_left",
+        "masthead_right",
+        "headline",
+        "editorial_lede"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, price tags, discount badges or countdown clutter; no glossy 3D bevels or neon gradients; no fake dense newspaper columns or lorem-ipsum filler; keep exactly one accent color (frame + hero echo) — no rainbow palettes; headline stays a factual claim, never \"SALE\"/\"OFFER\" shouting; paper texture subtle, not grunge-distressed.",
+      "re_relevance": 9,
+      "re_adaptation": "Swap the product cutout for a clean facade/tower render or golden-hour hero shot on the newsprint; the headline becomes the launch-demand fact (\"Tower 1 sold out in 9 hours. The waitlist is longer.\") and the torn-strip lede explains, friend-casual, why this project is quietly outselling the corridor's marquee names — masthead labels become the city/micro-market and launch-phase issue tag.",
+      "use_when": [
+        "launch",
+        "scarcity",
+        "social-proof",
+        "editorial",
+        "curiosity",
+        "premium"
+      ]
+    },
+    {
+      "id": "customer_quote_v1",
+      "name": "Customer Quote",
+      "blueprint": "Single flat brand-color canvas, portrait 4:5. Left 40% is a text rail: an oversized italic pull-quote in white, opening quotation mark included, stacked one-to-two words per line filling roughly the top 60% of the frame; below it a small em-dash attribution (first name + age), a tight 5-star row, and a tiny one-line verification caption; brand logo lockup pinned bottom-left. Right 60% is a photo of a real person shot from behind on a seamless backdrop matching the background color exactly, so the image reads as one continuous surface — the product they wear/hold is the only detailed object and sits at upper-right eye level. One small sparkle/asterisk glyph floats top-left as the only ornament.",
+      "copy_slots": [
+        "quote",
+        "attribution",
+        "verification_line",
+        "logo"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, discount badges, price flashes or countdowns; no cartoon mascots or emoji; no busy lifestyle collage — one subject, one background color; subject never faces camera (the from-behind anonymity is the device); no gradient or texture on the backdrop — it must match the photo seamless exactly; quote stays under ten words, no paragraph testimonials; for premium use, swap playful rounded italic for an elegant serif italic and drop lowercase-cute styling.",
+      "use_when": [
+        "social-proof",
+        "testimonial",
+        "trust",
+        "retargeting",
+        "premium",
+        "brand-warmth"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Replace the product-wearer with a resident or couple shot from behind — on a balcony, lawn or lobby gazing toward the tower/greens — against a deep muted-luxury field (forest green, ink navy, warm sand); the quote becomes one emotional resident line (\"the kids just never come inside anymore.\"), the verification caption becomes \"resident since 2025\" or \"verified homeowner, Tower B\", and the stars can stay or give way to a RERA/possession micro-line above the developer logo."
+    },
+    {
+      "id": "key_features_v1",
+      "name": "Key Features",
+      "blueprint": "One flat saturated-pastel field edge-to-edge, no gradients; a large in-context hero shot of the product fills the center ~55-60% of the square canvas, angled slightly right. Top-left stack: small brand logo, then a short 2-3 word headline in bold white caps, left-aligned. Four to six feature callouts orbit the hero on both sides — each a tiny bold-caps label plus a one-line lighter descriptor, tied to its exact spot on the product by a hairline leader line ending in a small dot; a micro tagline sits mid-left, and the right edge carries the tagline repeating as a vertical micro-caps ticker with dot separators. Bottom band (~25%): oversized 2-3 line statement headline in heavy display caps at bottom-left, with a 3-4 line micro body paragraph and a solid dark pill CTA button at bottom-right.",
+      "copy_slots": [
+        "headline_top",
+        "micro_tagline",
+        "feature_callouts_4to6_label_plus_descriptor",
+        "vertical_ticker_text",
+        "headline_bottom",
+        "body_paragraph",
+        "cta"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price flashes or discount badges; no more than 6 callouts and no icon chips on them — hairline lines and dots only, never arrows; no boxed/outlined callout cards; single flat background color, no gradients or bokeh; no drop shadows or strokes on type; callout labels stay micro — they must never compete with the two headlines.",
+      "use_when": [
+        "spec-led",
+        "launch",
+        "editorial",
+        "feature-education",
+        "premium",
+        "trust"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Replace the worn-product macro with a hero tower/facade render (or clubhouse/deck hero) and turn the callouts into spec USPs pinned to real spots — deck size, ceiling height, open-space %, clubhouse sqft, minutes-to-metro. Bottom statement headline carries the emotion (\"Step light\" energy → the lifestyle promise), the body paragraph becomes the friend-voice fact line, ticker repeats the project name or tagline."
+    },
+    {
+      "id": "benefits_v1",
+      "name": "Benefits",
+      "blueprint": "Square split vertically: left ~55% is a full-bleed cinematic hero scene — the product staged in a stylized environment with soft natural props and one sculptural arch element, no text overlaid. Right ~45% is a clean white panel: top-left a two-line headline in large bold sans, line one in near-black, line two repeated-rhythm in the brand accent color. Below it, a vertical stack of five benefit rows connected by a thin vertical rule — each row is a small solid-color circular icon chip (accent colors alternating) on the left, then a bold short benefit title with a 1-2 line light-gray supporting sentence beneath. Bottom-right of the panel: small brand wordmark with a micro-tagline underneath. Generous even white space between rows; everything left-aligned inside the panel.",
+      "copy_slots": [
+        "headline_line1",
+        "headline_line2_accent",
+        "benefit_title_x5",
+        "benefit_desc_x5",
+        "logo_wordmark",
+        "tagline"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price tags, discount badges or countdowns; no icons rendered as clip-art emoji; no more than two accent colors in the chips; headline stays two short lines, never a paragraph; hero side stays text-free; no gradient washes over the white panel; no centered text — the panel is strictly left-aligned editorial.",
+      "use_when": [
+        "benefit-led",
+        "amenities",
+        "spec-stack",
+        "premium",
+        "consideration-stage",
+        "editorial"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Replace the product scene with a golden-hour tower or lifestyle hero render on the left; the five benefit rows become the project's proof stack — location minutes-to-landmark, land/open-space ratio, clubhouse or amenity signature, builder track record, and possession/RERA fact — with the developer logo and project tagline bottom-right."
+    },
+    {
+      "id": "media_mentions_v1",
+      "name": "Media Mentions",
+      "blueprint": "Deep warm-brown backdrop with a soft amber spotlight vignette centered behind the product. Top 12% is a press bar: a tiny uppercase eyebrow (\"AS FEATURED IN\") above a single row of 4-5 publication wordmarks in mixed editorial logotypes, separated by small dot bullets. Middle 30% carries an oversized italic serif pull-quote in cream, wrapped in large quotation marks across 2-3 centered lines, with a small letterspaced attribution line (\"— NAME, TITLE\") beneath it. Bottom half is the physical hero: the product staged center on tactile props (stack of vintage books on a trunk), lit by the warm glow so it reads like a magazine still-life; no other text below.",
+      "copy_slots": [
+        "eyebrow",
+        "press_names",
+        "quote",
+        "attribution"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, price tags, discount badges or CTA buttons; no more than one quote; publication row stays small and quiet (no giant logos); quote must sound like an editor wrote it, not ad copy; keep the palette to two warm tones plus cream type — no neon accents, no gradients fighting the spotlight, no cluttered props that upstage the hero.",
+      "use_when": [
+        "social-proof",
+        "trust",
+        "editorial",
+        "premium",
+        "launch",
+        "authority"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Swap the staged product for a moody golden-hour facade or clubhouse still of the project on the lower half, keep the spotlight treatment. Press row becomes real coverage (ET Realty, Times Property, Livemint, local city press) and the pull-quote becomes an actual editor/press line or an awards-jury citation about the project — trust-by-third-party is exactly how ₹1Cr+ buyers de-risk a builder."
+    },
+    {
+      "id": "star_review_v1",
+      "name": "Star Review",
+      "blueprint": "Full-bleed background is a monochrome brand-color wall (a repeating grid of branded surfaces carrying tiny playful micro-copy lines) that fills 100% of the frame; the hero subject sits center-right at roughly 55-70% frame height, held up from the bottom edge by a hand entering the frame. Left 40-45% is the message column: an oversized white serif-italic pull-quote in quotation marks (3 lines, top-left third), a small 5-star row directly beneath it, then a white rounded review-card UI mid-left — avatar, reviewer name + \"verified\" tag, star row, 3-4 lines of review body, a text link, and a \"N customers found this helpful\" footer line. Small brand wordmark locked to the bottom-right corner. Palette is one deep brand color + white; the review card is the only white surface, so it reads as real product-page UI floating over the scene.",
+      "copy_slots": [
+        "pull_quote",
+        "star_rating",
+        "reviewer_name",
+        "reviewer_meta",
+        "review_body",
+        "review_link",
+        "helpful_count",
+        "background_micro_copy",
+        "brand_wordmark"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price flashes or discount badges; no clip-art gold stars oversized as decoration; no stacking multiple review cards (one card only); no emoji inside the quote; keep the pull-quote serif-italic and unbolded — never switch it to heavy sans shouting; background stays one deep tone, no gradients-of-many-colors or confetti; the review card must look like genuine platform UI, not a designed sticker.",
+      "use_when": [
+        "social-proof",
+        "testimonial",
+        "trust",
+        "review-led",
+        "consideration",
+        "premium"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Swap the hand-held product for a twilight facade or hero interior filling the right half (the branded box-wall becomes a full-bleed architectural texture or deep-tone render), and make the pull-quote a resident's emotional line (\"We stopped searching the day we saw this view\"). The review card becomes a Google-review-style card from a verified homeowner with 5 stars and a \"found this helpful\" count — borrowed-trust UI that works unusually well for ₹1Cr+ buyers doing diligence."
+    },
+    {
+      "id": "stat_surround_v1",
+      "name": "Stat Surround",
+      "blueprint": "Full-bleed top-down lifestyle flat-lay as the background, softly lit, props pushed to the edges. Top 20%: a two-line headline in chunky friendly type set on torn-white-paper strips — line 1 small, line 2 much bigger with a period for punch. Middle 60%: the hero held up by a hand entering from the bottom, face-on and dominant at center; four stat blocks surround it in two side rails (two stacked left, two stacked right), each stat = a small circular line-icon badge, an oversized bold number (e.g. 87%), and a 2-4 word lowercase caption beneath, with thin hand-drawn arrows curving from each stat in toward the hero. Bottom-left 12%: a five-star row over a short two-line social-proof caption. Whole piece runs on a two-tone brand palette pulled from the hero; numbers in the darkest brand tone, backgrounds stay airy and natural.",
+      "copy_slots": [
+        "headline_line1",
+        "headline_line2",
+        "stat_1_number",
+        "stat_1_label",
+        "stat_2_number",
+        "stat_2_label",
+        "stat_3_number",
+        "stat_3_label",
+        "stat_4_number",
+        "stat_4_label",
+        "footer_proof"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, no discount badges, no price flashes, no more than 4 stats, no invented percentages — every number must be a real project fact. Replace the playful rounded type and doodle arrows with a refined serif/grotesk pairing and thin editorial rules or minimal line arrows; icons stay thin-line monochrome, never colorful clipart. Keep the flat-lay background muted and architectural, not busy kitchen-table clutter. No hand holding the hero for real estate — the tower stands on its own.",
+      "use_when": [
+        "stat-led",
+        "trust",
+        "proof-stack",
+        "launch",
+        "comparison",
+        "premium"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Swap the hand-held product for the hero tower render or facade crop at center; the four surrounding stats become hard project facts — mins to metro/airport, % open space, acres, number of amenities, RERA/possession date — and the star-row footer becomes a trust line (\"3,200 families chose X\" or the builder's legacy years). The headline stays the small-line/big-line emotional one-two, e.g. \"Small address. Big life.\""
+    },
+    {
+      "id": "behind_the_product_v1",
+      "name": "Behind the Product",
+      "blueprint": "Full-bleed environmental hero photo fills ~85% of the square: the product stands centered at roughly 50% of canvas height, physically planted in its real source setting — raw ingredients/landscape piling around its base in the lower third, soft-focus depth and sky behind. Top-left corner carries the logo with a tiny lowercase tagline beneath; top-right holds a thin-ruled monospace spec card of ~5 all-caps KEY: VALUE rows on small translucent dark tags (like a manufacturing label); a rotated 90-degree microcopy caption runs up the left edge, and a tiny centered copyright line sits just above the footer. Bottom ~15% is a clean light strip with three benefit columns — small line icon, bold short title, lighter one-line subline — separated by hairline vertical rules. Below that, a full-width letterspaced uppercase one-sentence summary runs between two hairlines at the very base.",
+      "copy_slots": [
+        "logo_tagline",
+        "spec_card_rows_5x_key_value",
+        "vertical_edge_microcopy",
+        "copyright_line",
+        "benefit_1_title",
+        "benefit_1_subline",
+        "benefit_2_title",
+        "benefit_2_subline",
+        "benefit_3_title",
+        "benefit_3_subline",
+        "footer_one_liner"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, discount badges, price-slash tags or urgency ribbons; spec card stays data-only monospace (no exclamation copy, no more than 5 rows); footer capped at exactly three icon columns with hairline rules, no filled color chips; background must stay photographic and naturalistic — no illustrated/cartoon environment, no neon gradients, no floating confetti props around the hero.",
+      "use_when": [
+        "launch",
+        "spec-led",
+        "trust",
+        "editorial",
+        "provenance",
+        "premium"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Replace the product with the tower/facade render standing in the project's real landscaped greens or site context (golden-hour, planting in the foreground); the monospace spec card becomes project facts (CONFIG: 3 & 4 BHK / SIZE: 2,100 SQFT / POSSESSION: 2028 / RERA: no. / TOWERS: 4). The three footer columns become trust stats — acres of open green, clubhouse sqft, builder legacy years — and the base one-liner becomes the location-lifestyle promise."
+    },
+    {
+      "id": "personal_note_v1",
+      "name": "Personal Note",
+      "blueprint": "Warm cream single-color canvas. A giant vertical brand wordmark in the accent color runs the full height of the right edge (~15% width), reading bottom-to-top. The left ~70% stacks: a bold two-line accent-color headline top-left, a one-line lowercase kicker (\"from the [brand] studio\") beneath it, then 12–16 lines of small dark letter-style body copy — one continuous intimate paragraph, ragged-right, tight leading, no bullets. The bottom ~35% holds the product hero photographed large on the same cream ground, cropped by the bottom edge so it feels like it's rising into the note. Two colors total: one accent, one near-black text on cream.",
+      "copy_slots": [
+        "headline",
+        "studio_kicker",
+        "manifesto_body",
+        "vertical_wordmark"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, no price tags, no discount stickers, no bullet lists or USP icon chips — the copy must stay one continuous letter, not fragments. No gradients, no drop shadows, no more than two colors plus the cream ground. Never shrink the body copy to make room for badges; whitespace and the long note are the luxury signal.",
+      "use_when": [
+        "editorial",
+        "trust",
+        "brand-story",
+        "long-copy",
+        "launch",
+        "premium"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Swap the product for a twilight facade or clubhouse render cropped at the bottom edge; the manifesto becomes a founder's/architect's note on why the project was built the way it was (\"we kept 80% open because...\"), with the project name as the vertical wordmark. Pure trust play — ideal for ₹1Cr+ buyers who read before they click."
+    },
+    {
+      "id": "highlighted_comment_v1",
+      "name": "Highlighted Comment",
+      "blueprint": "Square canvas flooded in one flat deep brand color, product-matched. Top 8%: small centered brand wordmark. Next 20%: two-line centered headline — line one bold white sans, line two oversized white italic serif for editorial contrast. Lower 70%: hero product shot centered and large, orbited by review UI cards — one dominant white rounded \"highlighted comment\" card on the left third (tiny label pill, avatar, name + verified-buyer tag, 5-star row, 4-5 line review body, \"read full review\" link, helpful-count footer) and three small floating quote chips staggered down the right edge and bottom-left corner, each just avatar + stars + one short quote. Cards cast soft drop shadows on the flat field; hero slightly overlaps the big card for depth.",
+      "copy_slots": [
+        "headline_line1_bold",
+        "headline_line2_italic",
+        "highlighted_review_name",
+        "highlighted_review_body",
+        "mini_quote_1",
+        "mini_quote_2",
+        "mini_quote_3",
+        "brand_wordmark"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, no discount badges or price slashes, no emoji-stuffed fake comments, no more than one long card plus three short chips (card clutter kills the premium read), no neon accent colors off the brand field, no ALL-CAPS shouting in quotes, no five-star spam rows repeated on every chip edge-to-edge, no plasticky fake avatars.",
+      "use_when": [
+        "social-proof",
+        "trust",
+        "review-led",
+        "consideration",
+        "premium",
+        "launch"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Swap the pouch for a hero tower/facade render (or a signature interior) on a deep brand-toned field; the highlighted comment becomes a named resident or site-visit testimonial (\"We compared six projects before booking here…\"), and the mini chips become short buyer quotes or one quote plus two proof chips (\"500m from metro\", \"92% Phase 1 sold\"). Testimonial-as-UI is a strong trust device for ₹1Cr+ decisions as long as names feel real and quotes stay understated."
+    },
+    {
+      "id": "bold_statement_v1",
+      "name": "Bold Statement",
+      "blueprint": "Square canvas stacked into three bands on a warm cream base. Top ~28%: oversized bold italic serif statement headline in near-black, two lines flush left, each sentence closed with an accent-color period; small brand wordmark right-aligned in the accent color just below the headline. Middle ~50%: full-bleed lifestyle photo of a person experiencing the product in a real-world setting, shot from behind or candid, with the headline statement echoed inside the scene itself (on the product, signage or environment) as a payoff. Bottom ~22%: cream benefits panel with three equal columns separated by hairline vertical rules — each column gets a small accent-red circular line icon, a bold all-caps micro-headline, and a two-line light description — closed by a slim black footer ticker bar: 5-star row plus social-proof count on the left, short CTA phrase center, campaign hashtag right in the accent color.",
+      "copy_slots": [
+        "headline",
+        "brand_wordmark",
+        "benefit_1_title",
+        "benefit_1_desc",
+        "benefit_2_title",
+        "benefit_2_desc",
+        "benefit_3_title",
+        "benefit_3_desc",
+        "social_proof_stat",
+        "cta",
+        "hashtag"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price slashes or discount badges; no neon gradients or drop shadows on type; keep exactly three benefit columns — never four or a grid; icons stay thin-line monochrome accent, never multicolor emoji-style; headline stays witty-declarative serif, never all-caps shouty sans; photo stays candid editorial, no studio cut-out product on white; footer ticker stays one quiet line, no urgency timers.",
+      "use_when": [
+        "launch",
+        "statement-led",
+        "lifestyle",
+        "benefit-stack",
+        "social-proof",
+        "premium"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "The lifestyle hero becomes a golden-hour shot of a resident walking toward the tower or through the landscaped deck, with the headline statement echoed on project signage or the skyline; the three benefit columns become location/amenity/trust proofs (\"12 MIN TO METRO\", \"80% OPEN & GREEN\", \"RERA APPROVED\"), and the footer ticker becomes \"500+ families home\" + \"Book your private walk-through\" + project hashtag."
+    },
+    {
+      "id": "customer_story_v1",
+      "name": "Customer Story",
+      "blueprint": "Full-bleed top-down lifestyle photo on one single saturated color surface, hero subject placed just right of center in the upper 60% and styled with 3-4 in-world props bleeding off the frame edges. Lower-left 35% carries a social-proof stack set directly on the photo with no card or panel: a small white circle avatar glyph beside a bold lowercase @handle, an italic one-line credential underneath (\"verified customer · neighborhood\"), then a two-line quote in casual white handwriting script, closed by a row of five solid white stars. A tiny white date · time stamp sits in the bottom-right corner like camera metadata, selling the candid-snapshot feel. All type pure white, left-aligned, generous letter-spacing on the metadata line.",
+      "copy_slots": [
+        "handle",
+        "credential_line",
+        "quote",
+        "timestamp"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No review-app UI chrome or screenshot borders, no speech bubbles, no yellow clipart stars or star-rating badges in boxes, no discount stickers or price callouts, no more than one quote, handwriting confined to the quote only (never the credential or timestamp), no drop shadows or white text panels over the photo, no emoji spam beyond a single accent glyph.",
+      "use_when": [
+        "social-proof",
+        "testimonial",
+        "trust",
+        "lifestyle",
+        "authenticity",
+        "premium"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Swap the product flat-lay for a lived-in golden-hour frame of the project — balcony at dusk, clubhouse lawn, or a styled living room — and make the @handle a resident name with the credential line reading \"resident since 2025 · Tower A\" or \"site-visited last month\". The handwritten quote becomes one emotional line about living there (\"my kids walk to school through a forest now\"), stars stay as-is or become a possession/RERA microline; the timestamp keeps the candid-testimonial authenticity."
+    },
+    {
+      "id": "hero_statement_v1",
+      "name": "Hero Statement",
+      "blueprint": "Promotional hero split roughly 55/45. Top 55%: flat softly-textured pastel field; tiny letterspaced all-caps kicker (brand · category) with a thin rule at top-left, then a three-line left-aligned power statement filling the width — bold display caps / italic serif lowercase / bold caps ending in a hard period — all set in one deep accent color; below it a small pill badge with one line of all-caps promise microcopy plus a hand-drawn doodle mark. Bottom 45%: warm sunlit lifestyle set with hard shadows on a tiled/textured ground; the hero subject stands center-right and breaks the horizon up into the pastel field, flanked by two or three casual props; a circular seal badge and a row of 3–6 tiny labeled benefit icons ride on or beside the hero, with a thin accent strip of micro-facts (specs, quantity, size) anchoring its base.",
+      "copy_slots": [
+        "kicker",
+        "headline",
+        "promise_badge",
+        "seal_badge",
+        "icon_labels",
+        "footer_facts"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No discount starbursts or price-slash flashes — the seal stays a quiet circular stamp, never a promo burst; no \"limited offer\" flags, no percentage callouts, no more than 6 icons, no patterned or gradient background behind the headline, no drop shadows or outlines on type, max two type families, no prop clutter crowding the hero.",
+      "use_when": [
+        "launch",
+        "statement-led",
+        "brand-promise",
+        "lifestyle",
+        "premium",
+        "emotion-led"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Swap the product pack for the tower/facade hero shot standing in a golden-hour landscaped-podium scene breaking into the pastel headline field; the power statement becomes the emotional claim, the pill badge carries the one casual friend-fact (e.g. \"3 acres of central greens, one address\"), the icon row becomes 3–4 amenity/location icons, and the micro-facts strip holds config + location + starting price with the seal as a RERA/possession stamp."
+    },
+    {
+      "id": "scroll_break_v1",
+      "name": "Scroll Break",
+      "blueprint": "Split the frame into two hard zones. Top 35%: flat white band styled as a truncated social post — 2-3 lines of bold black sans-serif, left-aligned like feed body text, written in first person and cut off mid-sentence with an ellipsis followed by a lighter gray \"…more\" tag. Bottom 65%: full-bleed candid editorial photograph, handheld eye-level in a real environment with natural depth of field, no text on it. No logo, no CTA, no price, no graphic overlays anywhere — the whole unit must read as a screenshotted native post, not an ad.",
+      "copy_slots": [
+        "hook",
+        "more_label"
+      ],
+      "ref_slots": [
+        "interior"
+      ],
+      "negatives": "No logos or brand lockups, no CTA buttons, no price tags or offer badges, no starbursts, no borders or drop shadows on the text band, no studio-lit or render-perfect photography — the photo must stay candid and slightly imperfect, and no text or watermark may touch the photo zone; anything polished breaks the native-post illusion.",
+      "use_when": [
+        "curiosity",
+        "native",
+        "hook-led",
+        "scroll-stop",
+        "editorial",
+        "social-proof"
+      ],
+      "re_relevance": 8,
+      "re_adaptation": "Replace the candid product shot with a resident-POV editorial frame — golden-hour balcony view, lobby, or a lived-in interior shot on what looks like a phone. The truncated post becomes a first-person discovery confession about the location or life upgrade (\"We stopped shortlisting 3BHKs the day we saw the view from…\"), cut off before the payoff so the curiosity carries the click."
+    },
+    {
+      "id": "headline_v1",
+      "name": "Headline",
+      "blueprint": "Square canvas on one flat, saturated brand-color background pulled straight from the product's palette — no gradients, no scene. Top 40% is owned by an oversized stacked lowercase headline: a small hand-script intro line (\"it's time to\" energy), then a 3-line display headline in a heavy rounded serif filling the full width, all in a single contrast color (white). Bottom 60%: the hero product cutout stands dead-center at roughly 45% canvas width, its top edge tucked just under the headline's last line; a small all-caps supporting copy block (4–5 short staccato lines, tiny type) sits on the left rail at vertical center. Loose ingredient/detail elements scatter around the product's base as a foreground layer, breaking the bottom edge for depth; no price, no CTA, no badge clutter.",
+      "copy_slots": [
+        "intro_script_line",
+        "headline",
+        "left_rail_support_lines"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, discount badges, or price flashes; no gradient or busy photographic background — one flat premium tone only; no candy-bright hues (swap to deep ink, forest, champagne or brand dark); no more than two typefaces; keep the scatter elements architectural/botanical, never confetti; headline stays emotional, never a spec sheet.",
+      "use_when": [
+        "launch",
+        "brand-statement",
+        "emotion-led",
+        "bold-typography",
+        "premium"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "The product pouch becomes a clean tower/facade cutout (or arched entrance render) centered on a deep flat brand tone; the script+display headline carries the emotional promise (\"come home to quiet\"), the left-rail caps block becomes 4 short location/spec facts told casually, and the base scatter becomes foliage, birds, or a thin skyline strip grounding the building."
+    },
+    {
+      "id": "social_proof_v1",
+      "name": "Social Proof",
+      "blueprint": "Clean white canvas split into three stacked zones. Top 25%: oversized lowercase headline in heavy black sans-serif, two left-aligned lines, one or two small inline emoji/icon accents ending the lines. Middle 30%: a rounded light-gray social-comment card — circular avatar at left, bold @handle with a muted timestamp beside it, one casual first-person testimonial line below, then an engagement row underneath the card (heart icon + like count, speech-bubble icon + reply count) in muted gray. Bottom 45%: three product hero cutouts in a row on the bare white background, evenly spaced and slightly overlapping, scaling subtly larger left to right, no props, no shadows beyond a soft contact shadow.",
+      "copy_slots": [
+        "headline",
+        "handle",
+        "timestamp",
+        "quote",
+        "like_count",
+        "reply_count"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, no discount badges, no price slashes, no five-star rating strips, no more than one comment card, no emoji pile-ups in the quote (max one), no neon or gradient backgrounds — keep the canvas pure white with generous breathing room; the comment must read like a real person, never ad-speak (\"world-class amenities\" is banned inside the quote).",
+      "use_when": [
+        "social-proof",
+        "testimonial",
+        "trust",
+        "ugc-tone",
+        "launch",
+        "casual-premium"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "Replace the sneaker trio with three property frames — exterior hero, a signature interior, and an amenity/view angle — and make the comment card a resident or recent-buyer quote told like a friend (\"moved in last month, still not over the sunrise from the 22nd floor\"). Keep the headline emotional and lowercase but drop the emoji stack to hold a premium register."
+    },
+    {
+      "id": "social_comment_v1",
+      "name": "Social Comment",
+      "blueprint": "Flat white canvas split in three stacked zones. Top 20%: two-line bold black lowercase sans-serif headline, left-aligned, with 1-2 small inline emojis punctuating the copy. Middle 30%: a rounded light-grey native-style social comment card — circular avatar left, bold @handle plus grey timestamp, one casual first-person comment line with emojis, and beneath it a heart icon with like count and a speech-bubble icon with reply count. Bottom 50%: the hero product shot(s) sitting directly on the white background in a clean row, no frame, no shadow clutter, bleeding slightly off the bottom edge.",
+      "copy_slots": [
+        "headline",
+        "comment_handle",
+        "comment_timestamp",
+        "comment_text",
+        "like_count",
+        "reply_count"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, price flashes or discount badges; only ONE comment card (a pile of comments reads spammy); keep the card iOS-native grey, not brand-colored; no emoji overload in the headline for a luxury read (max one); no fake blue-check unless the handle is real; background stays pure flat white — no gradients, textures or drop shadows behind the hero image.",
+      "use_when": [
+        "social-proof",
+        "testimonial",
+        "ugc-style",
+        "trust",
+        "curiosity",
+        "launch"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "Swap the product row for a single golden-hour exterior or balcony-view render bleeding off the bottom, and turn the comment into a believable resident/site-visit line (\"visited last weekend — the deck view alone sold us\"), with the headline selling the emotion the comment confirms. Keep like/reply counts modest and plausible; it becomes a quiet word-of-mouth trust ad rather than hype."
+    },
+    {
+      "id": "mystery_hook_v1",
+      "name": "Mystery Hook",
+      "blueprint": "Off-white canvas, top ~60% is the testimonial zone: an oversized flat brand-green quotation glyph anchored in the top-left corner, with a matching closing glyph hugging the right edge at ~55% height. Left-aligned type stack inside it — a small italic setup line that withholds the payoff (\"I didn't expect X to do this…\"), then a 2-line ultra-bold condensed sans payoff headline in black caps at ~5x the setup size, then a short sensory subline with exactly one word italicized for emphasis, then a tiny em-dash attribution line (\"– Verified Customer\"). Bottom ~40% is a solid brand-green band: 4-5 product/reference shots fan edge-to-edge in a shallow overlapping arc, each slightly rotated for a casual lineup feel. Bottom-right corner of the band carries a compact trust lockup — check-in-circle icon beside a bold \"TRUSTED BY THOUSANDS\" title with a small sub-caption, a 5-star row beneath, and a rating + review-count line in small caps.",
+      "copy_slots": [
+        "quote_setup",
+        "headline_payoff",
+        "subline_sensory",
+        "attribution",
+        "trust_badge_title",
+        "trust_badge_sub",
+        "rating_line"
+      ],
+      "ref_slots": [
+        "hero",
+        "angle",
+        "interior"
+      ],
+      "negatives": "No starbursts, no discount stickers or price slashes, no clipart quote marks (glyphs must be flat, geometric, single-color), no drop shadows or gradient fills on type, no more than one accent color against black/off-white, no emoji, no fabricated review counts styled like e-commerce spam — the trust lockup stays quiet and typographic, not a badge explosion.",
+      "use_when": [
+        "social-proof",
+        "curiosity",
+        "testimonial-led",
+        "mystery",
+        "premium",
+        "launch"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "Swap the fanned product colorways for a shallow arc of 3-4 interior/amenity renders (or one wide tower hero) on the green band, and make the quote a resident or site-visit line — italic setup \"I came for the location…\" paying off into a bold emotional headline. The trust lockup becomes \"Trusted by 300+ families\" with RERA registration or possession-date replacing the review count."
+    },
+    {
+      "id": "trusted_review_v1",
+      "name": "Trusted Review",
+      "blueprint": "Full-bleed lifestyle scene washed in a single saturated brand color; the hero subject sits centre-right across the lower 60%, angled slightly, with one colour-matched prop softly defocused behind it. Top 40%: an oversized opening quotation mark plus a 2-3 line pull-quote testimonial set in heavy condensed uppercase white, the last line flipped to the accent colour and closed with a small end-quote; a 5-star row sits directly beneath. Lower-left 45% width: a floating white rounded-corner review card overlapping the hero — circular avatar, reviewer name with a verified-badge row, 3-4 lines of small dark review copy, a grey \"…Read more\" link, thin divider, then a thumbs-up \"N people found this helpful\" footer; card casts a soft shadow and is the only white element in the frame.",
+      "copy_slots": [
+        "quote_headline",
+        "accent_quote_line",
+        "reviewer_name",
+        "reviewer_badge",
+        "review_body",
+        "read_more_link",
+        "helpful_count_footer"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, discount badges, price tags or countdowns; no fake stock-photo avatars or multiple stacked review cards; keep the card UI flat and minimal (one avatar, one badge, one footer line); no rainbow gradients or neon glows — the frame stays in one brand hue plus white; headline stays a human quote, never a feature list; no more than one emoji inside the review body.",
+      "use_when": [
+        "social-proof",
+        "testimonial",
+        "trust",
+        "review-led",
+        "consideration",
+        "premium"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "Swap the staged product for a twilight tower exterior or a warm lived-in interior toned to one brand hue; the pull-quote becomes a resident's emotional line (\"We stopped taking weekend getaways. Home became one.\") and the card becomes a verified-homeowner / Google-review style card with the star row intact — the helpful-count footer converts to a proof stat like \"4.8 from 312 resident reviews\"."
+    },
+    {
+      "id": "stat_surround_2_v1",
+      "name": "Stat Surround 2",
+      "blueprint": "Flat warm single-tone background, portrait frame. Top 22%: a two-line, all-caps extra-bold condensed headline in the brand accent color, centered, with a one-line casual subline directly under it; a small circular rotating-text badge overlaps the headline block at the top-right edge. Middle 55%: one large hero object held/presented at center (slightly right, angled ~10°), surrounded by four benefit callouts — two stacked down the left margin, two stacked down the right margin — each callout is a thin-line circular icon, a short bold 2-3-word title, and 2 lines of tiny supporting copy, all left/right-aligned toward their margin. Bottom 15%: brand logo lockup at lower-left, and a centered small-caps social-proof strip along the bottom edge.",
+      "copy_slots": [
+        "headline",
+        "subline",
+        "badge_text",
+        "stat_1_title",
+        "stat_1_body",
+        "stat_2_title",
+        "stat_2_body",
+        "stat_3_title",
+        "stat_3_body",
+        "stat_4_title",
+        "stat_4_body",
+        "footer_proof"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price flashes or discount stickers; exactly four callouts, never more; thin-line monochrome icons only — no filled cartoon icons, no emoji; keep the background one flat muted tone (no gradients, confetti or pattern fills); drop the hand-holding gimmick for premium categories — present the hero cleanly; badge stays quiet single-color, not neon.",
+      "use_when": [
+        "stat-led",
+        "feature-summary",
+        "launch",
+        "trust",
+        "single-hero",
+        "comparison"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "Replace the hand-held product with the tower/facade hero render (or a keyed-out building cutout) at center, and turn the four callouts into hard project stats — e.g. \"5 min to metro\", \"80% open space\", \"3-side open homes\", \"IGBC Gold\" — with the footer strip carrying social proof (\"500+ families home\") and the badge carrying the launch/possession tag. Headline sells the emotion, subline states the location fact casually."
+    },
+    {
+      "id": "highlighted_hook_v1",
+      "name": "Highlighted Hook",
+      "blueprint": "Split the canvas roughly 55/45: left column carries the story, right column is a full-height product hero standing on the baseline, cropped slightly at the right edge. Top-left corner: small circular reviewer avatar with name, a verified-buyer tick and a 5-star row beneath it. Under that, a 6-8 line first-person testimonial quote in dark mixed-weight type, with 2-3 key phrases swiped in a marker-highlight color block so the hook reads even on skim. Bottom-left: a compact trust strip — icon plus \"TRUSTED BY THOUSANDS\" micro-headline and a one-line subline — and a small circular logo badge pinned in the corner. Background is a warm soft-gradient scene wash with a few ingredient/context props scattered at the corners and light hand-drawn doodle accents; everything stays behind the text column.",
+      "copy_slots": [
+        "quote",
+        "highlighted_phrases",
+        "reviewer_name",
+        "reviewer_tag",
+        "star_rating",
+        "trust_headline",
+        "trust_subline"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, no discount badges or price slashes, no neon-yellow highlighter or cartoon doodles — highlights become a muted champagne/warm-sand swipe or a fine underline. No fruit/ice props or busy scatter; background is a single calm architectural or dusk-sky wash. Avatar must look like a real person, not stock-smile; keep the star row small and quiet, never gold-glitter.",
+      "use_when": [
+        "social-proof",
+        "testimonial",
+        "trust",
+        "quote-led",
+        "lifestyle",
+        "consideration-stage"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "The right-column product hero becomes a vertical crop of the tower facade or a signature interior; the testimonial becomes a resident/buyer quote with the emotional phrase and one hard fact (location, view, possession) highlighted. The trust strip becomes \"Trusted by 400+ families\" or a RERA/possession line, and the corner badge carries the developer logo."
+    },
+    {
+      "id": "reaction_quote_v1",
+      "name": "Reaction Quote",
+      "blueprint": "Full-bleed moody gradient background — deep navy-black at top melting into a lighter atmospheric teal-sky toward the lower third, with a subtle ground/terrain element anchoring the bottom-right corner. Top-left 55% of the canvas carries a stacked 5–6 line all-caps headline in a heavy grotesk, flush left, near-white, written as a spoken reaction ending in a question — with one or two emotional words flipped to italic for conversational cadence. The single hero subject fills the right 55–60%, tilted 30–40 degrees on a diagonal from center-right toward upper-right, slightly overlapping the headline's right edge, with fine debris/particles trailing off it to imply motion and energy. Bottom-right corner holds a small letterspaced wordmark with a one-line tagline beneath it; nothing else on the canvas — no price, no CTA, no badges.",
+      "copy_slots": [
+        "headline",
+        "tagline"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, discount stickers, price tags, badges or CTA buttons; headline stays a single spoken-voice question — no feature bullet lists; italics limited to one or two words, never the whole line; no outlines, drop-shadow type or neon gradients; motion debris stays fine and photographic — never cartoon speed-lines; background remains one clean atmospheric gradient, not a busy lifestyle photo competing with the type.",
+      "use_when": [
+        "curiosity",
+        "hook-led",
+        "quote-led",
+        "launch",
+        "premium",
+        "single-hero"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "Swap the floating product for a dramatic low-angle crop of the tower (or a signature amenity like the clubhouse edge) emerging on the same upper-right diagonal from mist or golden-hour haze — drop the debris, keep the atmosphere. The headline becomes a resident-reaction or editorial one-liner about the location/lifestyle advantage phrased as a question (\"A forest at your doorstep — should we call it unfair?\"), with the project logo and positioning line bottom-right."
+    },
+    {
+      "id": "benefits_checklist_v1",
+      "name": "Benefits Checklist",
+      "blueprint": "Single deep saturated brand-color field edge to edge, no gradient. Top 25%: two-line centered headline — line one a short question in cream serif, line two a one-word payoff (\"Check.\") in an accent-color italic serif. Middle 35%: hero product cutout floating at a three-quarter angle, slightly left of center, lit so one accent detail pops against the dark field, soft contact shadow only. Bottom 40%: a five-row comparison checklist — header row with brand name left and \"Other ___\" right in small type, then five thin full-width rows separated by hairline dividers, each row carrying a short benefit phrase centered with a filled dot in the left (brand) column and an empty outline circle in the right (competitor) column. All type reversed out in cream/white; accent color used only for the payoff word and product detail.",
+      "copy_slots": [
+        "headline_question",
+        "payoff_word",
+        "brand_label",
+        "competitor_label",
+        "benefit_row_1",
+        "benefit_row_2",
+        "benefit_row_3",
+        "benefit_row_4",
+        "benefit_row_5"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, no discount badges, no red X marks in the competitor column (empty circles only — confident, not combative), no more than five rows, no mixed accent colors, no busy photographic background behind the table, no ALL-CAPS shouting in benefit rows, no price tags or offer stickers.",
+      "use_when": [
+        "comparison",
+        "spec-led",
+        "trust",
+        "consideration-stage",
+        "premium",
+        "checklist"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "Replace the product cutout with a golden-hour tower or facade render floating on the dark field; the checklist becomes five buyer-checklist specs (e.g. 3-side open homes, 70% open space, clubhouse size, deck depth, corridor connectivity) with the project ticked against \"Most projects in [corridor]\" — or drop the competitor column entirely for a single-column \"Everything on your list. Check.\" spec sheet."
+    },
+    {
+      "id": "ugc_side_by_side_v1",
+      "name": "UGC Side-by-Side",
+      "blueprint": "Split the canvas into a left lifestyle column (~55-60% width) and a right brand-color panel (~40-45%). Left: a full-bleed candid UGC-style photo of a real person using/wearing the product, with an oversized vertical word stack cropped off the left edge as typographic texture. Right, stacked top to bottom: a clean floating product cutout with soft shadow sitting directly on the flat brand-color background (top ~35%), then a rounded white testimonial card with a small accent tab, an italic serif quote of 3-4 short lines, and a light attribution handle beneath it, then a compact logo lockup pill with tagline pinned to the bottom-right corner. Background is a single flat brand color with sparse hand-drawn accent marks; whole right column keeps generous padding and card corner-radius consistent.",
+      "copy_slots": [
+        "quote",
+        "attribution",
+        "brand_name",
+        "tagline",
+        "edge_word"
+      ],
+      "ref_slots": [
+        "hero",
+        "interior",
+        "logo"
+      ],
+      "negatives": "No star-rating clip-art, no discount badges or price starbursts, no cutesy doodles/sparkle stickers (swap for thin serif rules or nothing), no emoji in the quote, no influencer-style handle overload, no neon UGC caption stickers; quote card stays white with a single restrained accent color, photo stays natural-light candid, not staged catalog.",
+      "use_when": [
+        "social-proof",
+        "testimonial",
+        "trust",
+        "lifestyle",
+        "human-story"
+      ],
+      "re_relevance": 7,
+      "re_adaptation": "Left column becomes a candid resident/visitor moment (family on the balcony, evening walk in the landscaped court) instead of a product selfie; the top-right product cutout becomes a small framed tower/facade render or site-plan vignette. The quote card carries a real homeowner or site-visit line (\"We compared eleven projects. This was the only walk-through my wife didn't want to leave.\") with a first-name + tower attribution, and the logo pill holds the project lockup + micro-location tagline."
+    },
+    {
+      "id": "why_were_different_v1",
+      "name": "Why We're Different",
+      "blueprint": "Vertical 50/50 split canvas with a slim angled seam and a bold hand-lettered VS badge pinned dead-center on the divide. Left half is the foil: desaturated near-white panel, oversized black headline \"THEM\" in the top 15% with a three-word dismissive strapline under it, a muted generic product photo filling the middle 45%, and a 5-row X-mark checklist of shortcomings stacked in the bottom 30%. Right half mirrors the grid in the brand's saturated palette: \"US\" headline with an accent doodle/star, upbeat three-word strapline, the hero product styled with props in the middle band, a 5-row check-mark checklist bottom-right, plus a small round mantra badge tucked beside it. Both checklists sit on a shared baseline grid so each row reads as a direct one-to-one rebuttal; type is chunky high-contrast display throughout.",
+      "copy_slots": [
+        "them_label",
+        "them_strapline",
+        "us_label",
+        "us_strapline",
+        "them_checklist_5_items",
+        "us_checklist_5_items",
+        "mantra_badge_line"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No hand-drawn doodles, stickers, cartoon clouds or marker-scrawl type for premium use — replace with a refined serif/clean grotesk and thin rule dividers. No naming or picturing a real competitor; the \"them\" side stays an anonymous, desaturated archetype. No starbursts, discount flashes, price-slash badges or emoji checkmarks — use restrained tick/cross glyphs. Keep both sides on one photographic grade family (cool-muted vs warm-golden), not clashing candy colors.",
+      "use_when": [
+        "comparison",
+        "differentiation",
+        "positioning",
+        "checklist",
+        "trust"
+      ],
+      "re_relevance": 6,
+      "re_adaptation": "Left half becomes a cool, desaturated shot of anonymous cookie-cutter high-rise living (\"Any 3BHK\"); right half is the project's golden-hour hero render (\"Life at [Project]\"). The mirrored checklists become spec-vs-feeling rebuttals — shared walls vs 3-side-open homes, borrowed amenities vs 5-acre private greens — with the emotional line as the strapline and facts told casually in the list rows."
+    },
+    {
+      "id": "unexpected_twist_v1",
+      "name": "Unexpected Twist",
+      "blueprint": "Full-bleed, low-angle lifestyle action shot fills the entire square — subject mid-motion with the product moment in the lower third, dramatic golden-hour sky and landscape behind. Top-left ~45% width, ~35% height: a white rounded app-style review card with small avatar + username, a deliberately LOW star row (1 star), a green \"Verified Buyer\" pill, and 4–6 lines of small dark review copy whose \"complaint\" is secretly rave praise (the twist). Bottom-left ~35% of frame: massive stacked condensed serif headline in white, 3 short lines flush-left, cropped tight to the edge. Bottom-right corner: small thin white brand wordmark; no other UI, no CTA button.",
+      "copy_slots": [
+        "headline",
+        "review_quote",
+        "reviewer_name",
+        "star_rating",
+        "verified_badge",
+        "brand_wordmark"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price tags or discount flashes; only ONE review card — never a stack of testimonials; the low-star twist must stay singular and legible, not spammy or emoji-cluttered; no CTA buttons or fake app chrome beyond the single card; headline stays editorial serif/condensed, never bubbly or neon; photo must read cinematic lifestyle, not catalog packshot.",
+      "use_when": [
+        "social-proof",
+        "curiosity",
+        "humor-twist",
+        "review-led",
+        "launch",
+        "retargeting"
+      ],
+      "re_relevance": 6,
+      "re_adaptation": "Swap the action shot for a golden-hour lifestyle frame of the project — kids on the lawn, tower or clubhouse behind — and turn the card into a mock resident \"1-star\" testimonial whose complaint is praise (\"Weekend getaways feel pointless now. The club is 40 floors down. Unforgivable.\"), with headline \"THE RESIDENTS ARE IN.\" Use the ironic-review mechanic sparingly at ₹1Cr+ — it wins on wit and social proof but can undercut trust if the sarcasm isn't instantly readable."
+    },
+    {
+      "id": "callout_notes_v1",
+      "name": "Callout Notes",
+      "blueprint": "Full-bleed flat single-color canvas, no gradients. Top 35%: a small handwritten-script kicker line top-left, then a 2-line oversized condensed uppercase headline in ink-black filling the left two-thirds, with a short script accent subline directly beneath it. Middle 50%: the hero subject staged mid-action at center-right (a hand or element entering from the top-right corner adds motion), with 3–4 short handwritten callout notes placed around it — two stacked on the left margin, two on the right — each tied to a specific detail by a thin hand-drawn curved arrow. Bottom 8–10%: a full-width solid black footer bar split into two segments by a thin divider — brand mantra on the left, offer/CTA on the right — set in small caps of the background color.",
+      "copy_slots": [
+        "kicker_script",
+        "headline",
+        "headline_accent",
+        "callout_1",
+        "callout_2",
+        "callout_3",
+        "callout_4",
+        "footer_mantra",
+        "footer_offer"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starbursts, discount badges, or price roundels; no candy-bright D2C background — use a muted architectural tone (sand, deep green, ivory). Annotations in a refined fine-line italic or elegant hand script, one ink color only, maximum four callouts; arrows must be thin single strokes that never cross each other or the headline. No cartoon doodles, emoji, or marker scrawl; footer strip stays typographic, no percentage-off screamers.",
+      "use_when": [
+        "feature-callout",
+        "spec-led",
+        "stat-led",
+        "educational",
+        "launch",
+        "curiosity"
+      ],
+      "re_relevance": 6,
+      "re_adaptation": "Swap the poured product for a golden-hour hero render of the tower or a signature amenity cut out on the flat canvas; the four handwritten callouts become location/spec facts told casually (\"5 min to the metro\", \"3-side-open homes\", \"80% left as open space\", \"sunset deck on 32\"). The footer offer segment becomes launch pricing or \"Book your private walk-through\" instead of a discount."
+    },
+    {
+      "id": "trending_post_v1",
+      "name": "Trending Post",
+      "blueprint": "Full-bleed candid lifestyle photo as the background — a real person mid-scene, absorbed in their phone, shot in a warm real-world environment that fills 100% of the canvas. Over it, a floating social-thread screenshot card (rounded corners, app-native UI: small avatar + handle + timestamp row, then a bold sentence-case post title, then 3-4 short casual body paragraphs, then an engagement footer with upvote/comment/share counts) pinned to the left ~55-60% of width and ~65-70% of height, sitting flat like a real screenshot with a soft drop shadow. Product hero stands large in the bottom-right foreground at ~35% of frame height, slightly overlapping the card's right edge to tie the two layers together. All copy lives inside the thread card in native app typography (system-UI sans, mixed weights); no headline or logo outside the card.",
+      "copy_slots": [
+        "post_headline",
+        "post_body",
+        "username_handle",
+        "timestamp",
+        "engagement_counts"
+      ],
+      "ref_slots": [
+        "hero",
+        "interior"
+      ],
+      "negatives": "No inflated or absurd engagement numbers, no meme slang or emoji spam in the post body, no typos-as-style, no discount stickers, starbursts or price flashes on the card, no more than one thread card per frame, no brand logo slapped outside the screenshot — authenticity dies the moment it reads as an ad. Keep the background photo candid and unstaged; no studio lighting.",
+      "use_when": [
+        "social-proof",
+        "curiosity",
+        "ugc-native",
+        "testimonial",
+        "trust",
+        "thumb-stopping"
+      ],
+      "re_relevance": 6,
+      "re_adaptation": "Swap the can for a hero render of the tower/facade in the bottom-right corner and make the background a resident on their balcony or in a warm living room checking their phone; the thread becomes a plausible homeowner post — emotional headline (\"Finally stopped regretting every rent transfer\") with friend-voice facts in the body (possession date, walk-to-metro minutes, why they shortlisted it). Works as a trust/curiosity play but must read like a genuine resident thread, never a scripted review."
+    },
+    {
+      "id": "product_spotlight_v1",
+      "name": "Product Spotlight",
+      "blueprint": "4:5 canvas in three stacked bands on a single deep saturated field (navy). Top ~35%: centered all-caps serif headline in warm cream, stacked over three tight lines, with a small thin-outline pill CTA in the same cream directly beneath. Middle ~45%: the hero cutout sits large and slightly tilted on a diagonal color-block podium — two or three angled planes in one contrasting accent color slicing across the band — with a hard studio shadow grounding it; the navy field continues behind so the podium reads as a stage. Bottom ~20%: cream footer strip with a row of three icon+label benefit chips separated by hairline vertical dividers (tiny line icons, letterspaced caps micro-labels), and a centered letterspaced brand wordmark on the very bottom edge.",
+      "copy_slots": [
+        "headline",
+        "cta",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "brand_wordmark"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, price flashes or discount badges; no cartoon mascots or sticker graphics on the hero; podium planes stay tonal and architectural (stone, terracotta, muted bronze), never candy-bright clashing color; max three benefit chips, no icon clutter; serif headline stays cream-on-dark with tight leading, no drop shadows or outlines on type; keep the field a single deep color, no gradients or bokeh.",
+      "use_when": [
+        "launch",
+        "benefit-led",
+        "hero-shot",
+        "premium",
+        "brand-forward"
+      ],
+      "re_relevance": 6,
+      "re_adaptation": "Swap the product cutout for a cutout tower/facade render staged on a muted architectural plinth (stone or dusk-terracotta planes) against a deep evening-navy field; the three-chip footer becomes the spec trio told plainly — e.g. \"12 min to airport / 5-acre clubhouse / 3 & 4 BHK\" — with the emotion-led headline on top and a \"Book your private walk-through\" pill CTA."
+    },
+    {
+      "id": "organic_post_v1",
+      "name": "Organic Post",
+      "blueprint": "Full-bleed candid photograph, zero graphic overlays — every word lives physically in-scene. Upper-left ~30%: a yellow sticky note stuck to a real surface (bench back, window, wall) carries three short handwritten dash-list benefit lines in casual marker, with a small brand URL at the note's base. The product sits in the lower-right two-thirds, resting naturally on the same real-world surface, shot at eye level with shallow depth of field; the top third is soft environmental bokeh (fence, sky, street). Hard natural sunlight and phone-snapshot realism — it should read as an organic post, not an ad.",
+      "copy_slots": [
+        "note_line_1",
+        "note_line_2",
+        "note_line_3",
+        "footer_url"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No graphic text overlays, no logo lockups, no badges, starbursts, price tags or CTA buttons — copy exists only on the in-scene note. Handwriting stays neat and confident, not scribbled; max three short lines plus URL. No studio backdrop, no obvious retouching or AI-perfect sky; keep candid daylight grain. No discount or urgency language on the note.",
+      "use_when": [
+        "curiosity",
+        "organic-native",
+        "lifestyle",
+        "soft-launch",
+        "trust"
+      ],
+      "re_relevance": 6,
+      "re_adaptation": "Replace the placed product with the property itself as the scene — the sticky note goes on a floor-to-ceiling window over the view, a marble kitchen island, or a site-visit railing, so the \"surface\" is the interior/exterior hero shot. The three handwritten lines become casual friend-facts (location minutes, open-space percent, possession date) with the project microsite URL as the sign-off; works as a scroll-stopping native teaser rather than a hard lead-gen unit."
+    },
+    {
+      "id": "then_vs_now_v1",
+      "name": "Then vs Now",
+      "blueprint": "Top 20% band: bold condensed all-caps white headline, two stacked lines, posing a binary choice question. Lower 80%: a single oversized weighing-scale/balance prop centered on a seamless single-color studio backdrop, its two pans staging the comparison — left pan piled with the \"old way\" cluster (generic clutter, tipped low or high to signal loss), right pan holding the hero product 2-3x in a tight group. Each pan gets a handwritten-script callout with a hand-drawn arrow: negative pain phrase on the left (~upper-left third), positive benefit phrase on the right (~lower-right third). Soft studio shadow under the prop; background stays one flat brand color, no gradients or scenery.",
+      "copy_slots": [
+        "headline",
+        "left_callout_pain",
+        "right_callout_benefit"
+      ],
+      "ref_slots": [
+        "hero",
+        "angle"
+      ],
+      "negatives": "No starbursts, price flashes or discount stickers; no cartoon emoji arrows — callouts must be elegant handwritten script, not marker scribble; keep the backdrop a single muted premium tone (no candy pink for ₹1Cr+); the \"old way\" pan must read as tasteful metaphor objects, never trashy junk piles; no more than two callouts; no logos floating in negative space.",
+      "use_when": [
+        "comparison",
+        "curiosity",
+        "problem-solution",
+        "choice-framing",
+        "launch"
+      ],
+      "re_relevance": 5,
+      "re_adaptation": "Swap the literal balance prop for a split-stage comparison: left pan/side carries the old life (cramped high-rise cluster, traffic, grey city miniature), right side carries the project — a miniature tower/villa model or framed hero render elevated higher. Headline stays a choice question (\"Which side of the city are you on?\"); left callout becomes the pain fact (\"90-minute commutes\"), right callout the friend-fact benefit (\"15 min from the airport, 80% open green\")."
+    },
+    {
+      "id": "color_block_v1",
+      "name": "Color Block",
+      "blueprint": "Full-bleed brand-color background in one saturated hue, split into flat tonal blocks of the same color family (lighter panel top, deeper panel bottom-right) so the whole frame reads as a single color field. Top ~45%: two product shots at different scales sit side by side against the tinted backdrop, brand logo large in white above/behind them, with a small badge sticker top-left. Bottom ~55%: a comparison module — left third is a checklist of 3 short benefit lines in bold uppercase inside outlined boxes; right two-thirds is a two-column \"US vs THEM\" table, US column in the brand color with the product image and check marks, THEM column in muted grey with a bleached generic silhouette and X marks. All type is a single heavy sans in white/brand-dark; icons are simple checks and crosses, no gradients or photography beyond the product cutouts.",
+      "copy_slots": [
+        "headline",
+        "badge",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "us_label",
+        "them_label"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, no discount stickers, no neon or candy-saturated hues — restrict the color field to a muted premium palette (deep green, ink navy, sandstone). Never name or depict a competitor brand in the THEM column; keep it an abstract grey silhouette. No more than 3 checklist rows, no exclamation marks, no cluttered iconography. Keep the table lines hairline-thin and the type editorial, not infomercial.",
+      "use_when": [
+        "comparison",
+        "benefit-stack",
+        "differentiation",
+        "brand-color",
+        "checklist"
+      ],
+      "re_relevance": 5,
+      "re_adaptation": "Replace the product cutouts with a facade render and an interior vignette; the US vs THEM table becomes \"This project vs typical projects in the micro-market\" (e.g. A-Khata title, 80% open space, 5-min metro vs check/cross rows), and the checklist carries three hard location or spec facts. Works only if the comparison stays abstract — a grey silhouette building, never a named rival — otherwise the format tips D2C-gimmicky for a ₹1Cr+ audience."
+    },
+    {
+      "id": "comparison_table_v1",
+      "name": "Comparison Table",
+      "blueprint": "Full-canvas two-column versus layout, 50/50 vertical split with a hairline center divider: left column sits on a soft brand-tint panel, right column on flat neutral gray. Top band (~20%) holds brand logo + one-line tagline top-left and the competitor label in small caps with a muted descriptor top-right; below it (~25%) each column shows its product image at matched scale — hero packshot left, deliberately plain generic item right. Middle 45% is 5 horizontally aligned icon+text rows: left rows are line-icon + short bold claim with a lighter supporting line, right rows mirror them with muted icons and flat negative statements in gray. Bottom strip (~8%) runs full width in the brand tint with small logos at both ends and a centered punchline tagline.",
+      "copy_slots": [
+        "brand_tagline",
+        "competitor_label",
+        "competitor_descriptor",
+        "left_claim_rows_x5",
+        "right_counter_rows_x5",
+        "footer_punchline"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No red X marks or attack-ad tone, no named competitors, no starbursts or discount badges, no clip-art icons — use thin single-weight line icons, muted grays for the comparison side, generous row spacing, and keep both columns typographically calm so it reads as an editorial spec sheet, not a knock ad. Never use the word luxury for sub-5Cr inventory.",
+      "use_when": [
+        "comparison",
+        "objection-handling",
+        "feature-led",
+        "consideration-stage",
+        "rational-buyer"
+      ],
+      "re_relevance": 5,
+      "re_adaptation": "Replace the packshot-vs-bottle pair with a lifestyle or exterior render on the left vs a muted \"typical city apartment / standalone tower\" visual on the right, and turn the 5 rows into life-quality contrasts (private greens vs road-facing balconies, gated township vs shared access). Avoid naming any builder — frame the right column as a generic status quo, with the footer punchline carrying the emotional close."
+    },
+    {
+      "id": "app_screenshot_v1",
+      "name": "App Screenshot",
+      "blueprint": "Square sunlit tabletop scene. A gently tilted phone mockup fills the left 55–60% of frame, cropped at the bottom edge, showing a clean native app product-detail screen: brand logo header, product hero card up top, a left rail of three stacked spec chips (tiny label over an oversized bold value — two key metrics plus price), bold product name with a one-line description beneath, a star-rating row, a horizontal strip of reviewer avatars with a \"See All\" link, and a full-width dark rounded-pill CTA button anchored at the screen's bottom. The real product stands life-size in the right 35–40%, level with the phone and slightly behind it, casting a hard directional sun shadow. Fresh context props peek in from the top-right and bottom-left corners; a tiny legal line sits in the canvas's top-right. Palette is pulled from the product; the UI stays white, rounded-card, iOS-clean.",
+      "copy_slots": [
+        "app_brand_header",
+        "stat_chip_1_label",
+        "stat_chip_1_value",
+        "stat_chip_2_label",
+        "stat_chip_2_value",
+        "price",
+        "product_name_headline",
+        "description_line",
+        "rating",
+        "reviews_label",
+        "cta",
+        "footer_legal"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No starbursts, discount badges, or countdown stickers; no candy-bright cartoon palette or doodle illustration on the product; no fake App Store ratings badges or notification-clutter; UI must stay minimal native-iOS white with generous whitespace — never a busy dashboard; shadows stay natural single-source, no floating props or confetti.",
+      "use_when": [
+        "stat-led",
+        "social-proof",
+        "trust",
+        "product-detail",
+        "tech-forward",
+        "launch"
+      ],
+      "re_relevance": 5,
+      "re_adaptation": "The physical can beside the phone becomes the tower or facade render (or a framed site-model), and the app screen becomes a premium listing card: project name as the headline, spec chips read carpet area / possession date / starting price, the avatar strip becomes resident or RM testimonials with a 4.8-star rating, and the pill CTA reads \"Book a Private Visit\". Swap fruit props for landscaping foliage or a skyline edge to keep the sunlit-lifestyle staging."
+    },
+    {
+      "id": "whiteboard_explainer_v1",
+      "name": "Whiteboard Explainer",
+      "blueprint": "Full-bleed warm lifestyle photo of a wood-framed chalkboard propped on a tabletop, the board filling ~75% of the frame anchored top-left. All messaging is hand-drawn white chalk on the deep-green board: a \"Before → After\" arrow header across the top ~15% of the board, then two doodle columns underneath — 2-3 simple line icons per side illustrating the old pain (left) vs the new payoff (right) — with one short handwritten fact line under each column, and a chalk ribbon banner carrying the punchline across the board's lower third. A hand holding the hero product enters from the bottom-right corner at ~25% frame width, overlapping the board's frame edge; a small logo lockup sits vertically along the right/bottom edge. Soft props (fruit, decor) blur in the background; everything on the board stays loose, imperfect, hand-lettered.",
+      "copy_slots": [
+        "before_label",
+        "after_label",
+        "before_fact_line",
+        "after_fact_line",
+        "banner_punchline"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo"
+      ],
+      "negatives": "No cartoon smiley doodles or childish scrawl — chalk strokes must be fine, architectural, blueprint-style line work; max 3 icons per column, no clutter filling every inch of the board; no price-slash math, discount arithmetic or starburst stickers on the board; no neon chalk colors — single white/off-white chalk only; background props stay minimal and defocused, never competing with the board.",
+      "use_when": [
+        "comparison",
+        "before-after",
+        "problem-solution",
+        "explainer",
+        "playful",
+        "myth-busting"
+      ],
+      "re_relevance": 4,
+      "re_adaptation": "Swap the chalkboard for an architect's blueprint/site-plan board with fine white line-sketch icons, and the held D2C pack for a brochure, keys or scale model entering the corner. The before/after becomes a life-upgrade comparison — \"renting → owning\", \"90-min commute → 10 min to metro\" — with the chalk fact lines turning into possession-date, location or appreciation stats; works only if the hand-drawn style is kept restrained and draughtsman-like, since cartoon chalk reads too gimmicky for ₹1Cr+ buyers."
+    },
+    {
+      "id": "special_offer_v1",
+      "name": "Special Offer",
+      "blueprint": "Warm solid-color canvas, single flat background throughout. Top 30%: three small star glyphs centered, then a massive two-line chunky display-serif headline in a dark warm tone, with a one-line all-caps spec subline underneath separated by dot dividers. Middle 50%: product hero centered and large (bundle/box with items fanned symmetrically left and right), a rotated starburst offer sticker overlapping the hero's top-right edge, and a left rail of 3 small stacked circular benefit badges with icons. Bottom 20%: dark price tag/badge anchored bottom-left with tiny eyebrow label above the big price, a horizontal row of 3-4 icon+caption benefit chips beside it, and a full-width single-line marquee strip along the very bottom edge with star separators.",
+      "copy_slots": [
+        "headline",
+        "subline",
+        "offer_sticker",
+        "price_eyebrow",
+        "price",
+        "benefit_badge_1",
+        "benefit_badge_2",
+        "benefit_badge_3",
+        "benefit_chips",
+        "footer_marquee"
+      ],
+      "ref_slots": [
+        "hero"
+      ],
+      "negatives": "No starburst stickers, no \"special intro price\" retail framing, no dot-divider spec sublines shouting multiple claims, no icon-chip clutter row, no marquee strip — each of these reads FMCG shelf-promo, not premium. If adapted, cap it at ONE seal (launch/RERA), ONE price line, max two proof badges; keep the background architectural or deep-toned rather than candy-bright.",
+      "use_when": [
+        "launch",
+        "offer-led",
+        "price-led",
+        "bundle",
+        "urgency",
+        "playful"
+      ],
+      "re_relevance": 3,
+      "re_adaptation": "Replace the fanned product bundle with a centered tower/facade render, turn the starburst into a restrained circular \"Launching Now\" or \"RERA Approved\" seal, the price tag into \"₹1.2Cr* onwards\", and the benefit badges/chips into location-proof stats (metro minutes, acreage, possession date). Even adapted, the multi-badge promo grammar fights the premium editorial tone — use only when the client explicitly wants a price-forward launch blast."
+    },
+    {
+      "id": "product_in_action_v1",
+      "name": "Product in Action",
+      "blueprint": "1:1 full-bleed sunny lifestyle photograph as the single background scene (street, palms, retro architecture, soft warm light) — no panels, everything lives inside the photo. Left 55%: a person cropped knee-up interacts with a comically oversized hero product tilted ~15°, held chest-height so the product face reads at full size; the human touch is the hook. Top-center: brand logo in a hand-drawn script. Right 40%, upper half: stacked copy block on the open sky — one small script kicker line, then a 2–3 word display headline set huge in the brand accent color with hard period, then a one-line subline inside a thin hand-drawn box; below it a small sticker-style badge rotated ~10°. Bottom-right 30%: three product variants in a neat row resting naturally inside the scene (on a surface, not floating). Tiny star/sticker decals in two opposite corners for scrapbook energy.",
+      "copy_slots": [
+        "kicker",
+        "headline",
+        "subline",
+        "badge",
+        "variant_labels"
+      ],
+      "ref_slots": [
+        "hero",
+        "logo",
+        "angle"
+      ],
+      "negatives": "No holographic or puffy stickers, no doodle stars, no hand-drawn boxes, no bubblegum pastels, no surreal oversized-prop scaling of the property, no exclamation marks, no more than one script accent, no discount starbursts, no cluttered variant cans — keep the human-in-scene idea but grade it editorial: muted palette, serif kicker, single clean badge.",
+      "use_when": [
+        "launch",
+        "lifestyle",
+        "playful",
+        "variant-showcase",
+        "brand-energy"
+      ],
+      "re_relevance": 3,
+      "re_adaptation": "Swap the oversized product for a resident or couple in the foreground of a golden-hour lifestyle scene with the tower rising behind them; the bottom-right variant row becomes three small unit/amenity vignettes (clubhouse, deck, interior) and the sticker badge becomes a restrained RERA/possession or price-anchor chip. The scrapbook-sticker Gen-Z styling itself must be stripped — it reads D2C, not ₹1Cr+ premium."
+    },
+    {
+      "id": "bundle_deal_v1",
+      "name": "Bundle Deal",
+      "blueprint": "Solid flat brand-color background, 1:1. Top 20% is a stacked offer header, all centered: a tiny uppercase eyebrow line (\"limited time\" + event name + date range) in small tracked caps, then the offer headline split across two lines — a small connector word above a very large chunky display number-plus-word (\"30% OFF\" scale, dark contrasting ink), then a short casual script/handwritten subline naming what the offer covers. Middle 55% is the hero zone: three product units grouped as one trio (center unit forward and largest, flankers angled outward behind), physically tied together with a satin ribbon and bow to sell the \"bundle\" idea, with small scattered props (ice cubes) grounding the base; soft drop shadows on the flat color. Bottom 18% is a single row of five outlined capsule badges, each a line icon over a two-word benefit label in tiny caps. A one-line fine-print footer (shipping/terms) sits centered at the very bottom edge in micro type.",
+      "copy_slots": [
+        "eyebrow_event_name",
+        "date_range",
+        "offer_connector",
+        "offer_headline",
+        "offer_subline",
+        "benefit_label_1",
+        "benefit_label_2",
+        "benefit_label_3",
+        "benefit_label_4",
+        "benefit_label_5",
+        "footer_terms"
+      ],
+      "ref_slots": [
+        "hero",
+        "angle"
+      ],
+      "negatives": "No starburst or explosion shapes, no strike-through prices, no more than one number on the canvas, no neon discount red/yellow, no ribbon-and-bow kitsch on a property render, no cartoon props or confetti, no more than five badge capsules, no ALL-CAPS shouting in the subline — keep the header ink a single deep tone on one flat premium color.",
+      "use_when": [
+        "offer-led",
+        "urgency",
+        "launch-window",
+        "multi-product",
+        "benefit-stack",
+        "discount"
+      ],
+      "re_relevance": 3,
+      "re_adaptation": "The ribbon-tied can trio becomes three grouped renders (tower elevation flanked by clubhouse and interior, center forward) and the giant %-off headline becomes the one launch number that matters — \"Pre-launch from ₹1.4Cr\" or \"Only 42 homes\" — with the date-range eyebrow as the EOI/launch window. The five benefit capsules map cleanly to amenity/location proof points (5 min to metro, 80% open space, clubhouse acreage), but the format stays inherently offer-led, so use it only for genuine launch-window pushes, never evergreen brand work."
+    }
+  ]
+}
